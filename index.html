@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" tyoe="imagex/png" href="IMAGENS/simbolo logo.png">
+    <script src="JS/script.js"></script>
+    <script src="JS/script2.js"></script>
+    <title>Inova IFPI 2024</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <span class="menu-hamburguer" ><i class="fa-solid fa-bars" onclick="menuHamburguer()"></i></span>
+        <img src="IMAGENS/Logo-Inova.png" alt="">
+        <ul id="menu-itens"> 
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#programacao">PROGRAMAÇÃO</a></li>
+            <li><a href="#palestrantes">PALESTRANTES</a></li>
+            <li><a href="#minicursos">MINICURSOS</a></li>
+            <li><a href="#parcerias">PARCERIAS</a></li>
+            <li><a href="#duvidas">DÚVIDAS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <a href="https://suap.ifpi.edu.br/eventos/inscricao/1480/">
+            <section class="folder"></section>
+        </a>
+        <section id="inicio" class="card-sbr-nos">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2RZuuWTiktw?si=5oZVydClofYvxtyJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="texto-container">
+                    <h2>SOBRE NÓS</h2>
+                    <h1>CONHEÇA O EVENTO</h1>
+                    <p id="linha">__________</p>
+                    <p>
+                        A Semana da Propriedade Intelectual e Inovação é um evento originado no IFPI - Campus Floriano 
+                        e idealizado com base nas temáticas de Propriedade Intelectual e Transferência de Tecnologia para 
+                        a Inovação. Busca-se democratizar o acesso a novos conhecimentos, bem como destacar a importância 
+                        de experiências entre estudantes e professores de instituições de ensino regionais, as quais 
+                        ofertam os mais diversos cursos. A interdisciplinaridade é o tema central do evento e seu objetivo 
+                        principal inclui a integração das diferentes áreas do conhecimento.
+                    </p>
+                </div>
+        </section>
+    </div>
+    
+    
+    <div class="timer">
+        <div class="desc-time">
+            <p>O EVENTO COMEÇA EM:</p>
+        </div>    
+        <div class="launch-time">
+            <div>
+                <p id="days">00</p>
+                <span>Dias</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Horas</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutos</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Segundos</span>
+            </div>
+        </div>
+        <div class="time-button-container">
+            <a href="https://suap.ifpi.edu.br/eventos/inscricao/1480/"><button class="time-button">QUERO ME INSCREVER!</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <section id="programacao" class="programacao">
+            <h1 id="titulo-prog">PROGRAMAÇÃO</h1>
+            <div class="span-linha"><span id="dia_24"></span><span id="dia_25"></span><span id="dia_26"></span></div>
+            <h2 id="dia_evento_semana">TERÇA-FEIRA</h2>
+            <div class="data-button">
+                <div id="dia_programacao">
+                <h1 id="dia_event">24 DE SETEMBRO</h1>
+                <p id="linha2">__________</p>
+                </div>
+                <div>
+                    <button class="btn-prx" id="btn-ant" onclick="passar_dia(-1)"><i class="fas fa-arrow-left"></i> Dia anterior 
+                    </button>
+                    <button class="btn-prx" id="btn-prx" onclick="passar_dia(1)">Próximo dia <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="event-card dia_24" >
+                <div class="card card1" id="atividade01" onclick="exibir_modal('card-overlay1')" >
+                    <div class="flex-row">
+                        <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                        <div class="txt-card"><h2 class="desc-horario">18:00 - Credenciamento</h2><span>abra para mais detalhes</span>
+                            
+                        </div>
+                    </div>
+                    <div class="arrow-div">
+                        <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+                
+                    </div>
+                </div>
+                <div class="card card2" id="atividade02" onclick="exibir_modal('card-overlay2')">
+                    <div class="flex-row">
+                        <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                        <div class="txt-card"><h2 class="desc-horario">18:15 - Apresentação Cultural</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                    </div>
+                    <div class="arrow-div" id="atividade0">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                    </div>
+                </div>
+
+                <div class="card card3" id="atividade03" onclick="exibir_modal('card-overlay3')">
+                    <div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">18:45 - Abertura Oficial</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                    </div>
+                    <div class="arrow-div">
+                        <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+                
+                    </div>
+                </div>
+
+                <div class="card card4" id="atividade04" onclick="exibir_modal('card-overlay4')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">19:00 - TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+
+            </div>
+
+            <div class="event-card dia_25 hidden" >
+                <div class="card card5" id="atividade05"  onclick="exibir_modal('card-overlay5')">
+                    <div class="flex-row">
+                        <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                        <div class="txt-card"><h2 class="desc-horario">08:00 às 12:00 - Minicurso - Introdução ao mundo da Internet das Coisas (IoT), com ênfase no uso de software livre.</h2><span>abra para mais detalhes</span>
+                            
+                        </div>
+                    </div>
+                    <div class="arrow-div">
+                        <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+                
+                    </div>
+                </div>
+                <div class="card card6" id="atividade06" onclick="exibir_modal('card-overlay6')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">14:00 às 17:00- Minicurso - Pentest</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div></div>
+
+                <div class="card card7" id="atividade07" onclick="exibir_modal('card-overlay7')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">18:00 - Credenciamento</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card8" onclick="exibir_modal('card-overlay8')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">18:30 - Apresentação Cultural</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card9"  onclick="exibir_modal('card-overlay9')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">19:00 - Palestra - CyberEduc: Cibersegurança na Educação Pública</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card10" onclick="exibir_modal('card-overlay10')" ><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">20:30 - Palestra - DevSecOps</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+
+            </div>
+
+            <div class="event-card dia_26 hidden">
+                <div class="card card11" onclick="exibir_modal('card-overlay11')">
+                    <div class="flex-row">
+                        <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                        <div class="txt-card"><h2 class="desc-horario">08:00 às 12:00 e 14:00 às 18:00 - Minicurso - Consumindo API com React e boas práticas no desenvolvimento frontend</h2><span>abra para mais detalhes</span>
+                            
+                        </div>
+                    </div>
+                    <div class="arrow-div">
+                        <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+                
+                    </div>
+                </div>
+                <div class="card card12" onclick="exibir_modal('card-overlay12')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">09:00 às 12:00 - Minicurso - Sustentabilidade: Inovação e Tecnologias Sociais em Escolas do Sul do Piauí</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div></div>
+
+                <div class="card card13" onclick="exibir_modal('card-overlay13')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">09:30 às 11:00 - Palestra - Como evitar o plágio e garantir na originalidade em projetos de Inovação Tecnológica</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card14" onclick="exibir_modal('card-overlay14')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">15:00 às 17:30 - Palestra - OSINT - Investigação Cibernética em Fontes Abertas</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card15" onclick="exibir_modal('card-overlay15')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">18:00 - Credenciamento</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card16" onclick="exibir_modal('card-overlay16')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">18:30 - Apresentação Cultural</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div" >
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+                <div class="card card17" onclick="exibir_modal('card-overlay17')"><div class="flex-row">
+                    <img src="IMAGENS/quadro icone.png" alt="" class="icon-card">
+                    <div class="txt-card"><h2 class="desc-horario">19:00 - Palestra - Escolas Sustentáveis: Inovação e Tecnologias no Sul do Piauí</h2><span>abra para mais detalhes</span>
+                        
+                    </div>
+                </div>
+                <div class="arrow-div">
+                    <img src="IMAGENS/arrow_outward.png" alt="" class="card-arrow">
+            
+                </div>
+                </div>
+
+
+            </div>
+        </section>
+        
+        <section id="card-overlay1" class=" card-overlay   cards-popup overlay overlay1">
+            <div  class="cards-prog  card-popup">
+                
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>24 de Setembro | 18:00 às 19:30</h2>
+                    <h1>CREDENCIAMENTO</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão comparecer em frente ao auditório, onde encontrarão os alunos de TADS IV, para confirmar a inscrição. Após a confirmação, devem se dirigir ao auditório onde serão recebidos com um kit para participação.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Equipe de certificação</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay1')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay2" class=" card-overlay cards-popup overlay overlay2">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="" >
+                </div>
+                <div class="txt-prog">
+                    <h2>24 de Setembro | 18:15 às 18:45</h2>
+                    <h1>APRESENTAÇÃO CULTURAL</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão se direcionar ao auditório para a apresentação musical que antecede a abertura do evento.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Deborah Thielly</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay2')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay3" class=" card-overlay cards-popup overlay overlay3">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="" >
+                </div>
+                <div class="txt-prog">
+                    <h2>24 de Setembro | 18:45 às 19:00</h2>
+                    <h1>ABERTURA OFICIAL</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão comparecer no auditório para a abertura oficial do evento.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Neuda Fernandes</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay3')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay4" class=" card-overlay cards-popup overlay overlay4">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>24 de Setembro | 19:00 às 21:30</h2>
+                    <h1>TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Paulo Coutinho, Maria Rebello & Robson Freitas</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay4')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay5" class=" card-overlay cards-popup overlay overlay5">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Ronaldo.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>25 de Setembro | 08:00 às 12:00</h2>
+                    <h1>Introdução ao Desenvolvimento para IoT</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>Serão abordados os conceitos fundamentais de IoT, seguidos de uma parte prática que inclui a programação de dispositivos conectados. Os participantes aprenderão como configurar, programar e monitorar dispositivos IoT, além de explorar ferramentas de código aberto para o gerenciamento e visualização de dados em tempo real. O minicurso proporcionará uma compreensão básica de como funcionam os sistemas IoT.
+                        </h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Prof. Ronaldo Borges</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay5')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay6" class=" card-overlay cards-popup overlay overlay5">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Keoma.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>25 de Setembro | 14:00 às 17:00</h2>
+                    <h1>Pentest</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>Descubra como se proteger no ambiente digital e veja na prática como os hackers atuam!
+                            Participe do nosso evento exclusivo, e aprenda a identificar e mitigar riscos digitais, conheça as táticas utilizadas por hackers e explore o universo do pentest com demonstrações ao vivo.
+                            </h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Prof. Esp. Keoma Coelho</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay6')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay7" class=" card-overlay cards-popup overlay overlay6">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="" >
+                </div>
+                <div class="txt-prog">
+                    <h2>25 de Setembro | 18:00 às 19:30</h2>
+                    <h1>CREDENCIAMENTO</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão comparecer em frente ao auditório, onde encontrarão os alunos de TADS IV, para confirmar a inscrição. Após a confirmação, devem se dirigir ao auditório onde serão recebidos com um kit para participação.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Organização do evento</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay7')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay8" class=" card-overlay cards-popup overlay overlay7">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="" >
+                </div>
+                <div class="txt-prog">
+                    <h2>25 de Setembro | 18:30 às 19:00</h2>
+                    <h1>Apresentação Cultural</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão se direcionar ao auditório para a apresentação musical que antecede a abertura do evento.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Professor Antônio Carlos</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay8')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay9" class=" card-overlay cards-popup overlay overlay8">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Keoma.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>25 de Setembro | 19:00 às 20:30</h2>
+                    <h1>Palestra</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>Descubra como se proteger no ambiente digital e veja na prática como os hackers atuam!
+                            Participe do nosso evento exclusivo, onde o projeto CyberEduc traz insights essenciais sobre cibersegurança voltada para a educação pública. Aprenda a identificar e mitigar riscos digitais, conheça as táticas utilizadas por hackers e explore o universo do pentest com demonstrações ao vivo.
+                        </h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Prof. Keoma Coelho e Equipe SEDUC - PI</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay9')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay10" class=" card-overlay cards-popup overlay overlay9">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Cristiano.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>25 de Setembro | 20:30 às 22:00</h2>
+                    <h1>Palestra</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>A abordagem DevSecOps integra a segurança ao processo de desenvolvimento e operações desde o início, ao invés de tratá-la como uma preocupação secundária. Essa prática garante que as medidas de segurança sejam incorporadas em cada etapa do ciclo de desenvolvimento, resultando em aplicações mais robustas e seguras. Com o DevSecOps, os desenvolvedores e engenheiros de segurança trabalham em colaboração, utilizando ferramentas automatizadas para identificar e corrigir vulnerabilidades de forma proativa. Isso não só acelera o processo de desenvolvimento, mas também reduz o risco de falhas de segurança críticas.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Cristiano Altino Cavalcante</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay10')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay11" class=" card-overlay cards-popup overlay overlay10">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/CARLINHOS.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 08:00 às 12:00 - 14:00 às 18:00</h2>
+                    <h1>Consumindo API com React e boas práticas no desenvolvimento frontend</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>O objetivo será apresentar o React de maneira simples e divertida através da implementação de um sistema web de consulta na base oficial da Marvel. Além dos conceitos primordiais do React, será ensinado sobre paginação, consumo de API com autenticação e boas práticas no desenvolvimento frontend. No contexto da Inovação, React é uma ferramenta oportuna pois rompe as barreiras dos navegadores servindo de  ótima escolha para validar ideias e e em projetos de larga escala para além da web. </h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Carlos Augusto Brandão</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay11')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay12" class=" card-overlay cards-popup overlay overlay18">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Andriella.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 09:00 às 12:00</h2>
+                    <h1>Sustentabilidade: Inovação e tecnologias sociais em escolas do sul do Piauí</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>Esta oficina visa proporcionar aos educadores da Rede Pública do Sul do Piauí e estudantes interessados pela temática, uma mentoria prática, apresentando ferramentas metodológicas e instrumentos que facilitam a implementação de atividades voltadas a sustentabilidade no ambiente escolar. Alinhada com os 17 Objetivos de Desenvolvimento Sustentável (ODS), a capacitação também foca na aplicação de tecnologias sociais adequadas às demandas específicas da região.
+                        </h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Andriella Maciel da Cruz</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay12')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay13" class=" card-overlay cards-popup overlay overlay18">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Dalson.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 09:30 às 11:00</h2>
+                    <h1>Como evitar o plágio e garantir na originalidade em projetos de Inovação Tecnológica</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>Esta palestra abordará a importância da integridade acadêmica em projetos de inovação tecnológica, com foco em como evitar o plágio e promover a originalidade.
+                        </h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Dalson Carvalho</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay13')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay14" class=" card-overlay cards-popup overlay overlay1">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Raimundo.jfif" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 15:00 às 17:30</h2>
+                    <h1>OSINT - Investigação Cibernética em Fontes Abertas</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>A palestra “Investigação Cibernética em Fontes Abertas” abordará as práticas e técnicas utilizadas para coletar, analisar e interpretar informações disponíveis publicamente na internet com o objetivo de identificar, monitorar e mitigar ameaças cibernéticas. Este tema é essencial no contexto atual, onde a quantidade de dados acessíveis online cresce exponencialmente e a segurança da informação se torna cada vez mais crítica para organizações e indivíduos.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Raimundo Pereira da Cunha Neto</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay14')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay15" class=" card-overlay cards-popup overlay overlay1">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="" >
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 18:00 às 19:30</h2>
+                    <h1>CREDENCIAMENTO</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão comparecer em frente ao auditório, onde encontrarão os alunos de TADS IV, para confirmar a inscrição. Após a confirmação, devem se dirigir ao auditório onde serão recebidos com um kit para participação.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Equipe de certificação</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay15')">&times;</span>
+            </div>
+        </section>
+
+        <section id="card-overlay16" class=" card-overlay cards-popup overlay overlay2">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="" >
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 18:30 às 19:00</h2>
+                    <h1>APRESENTAÇÃO CULTURAL</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>As pessoas inscritas no evento deverão se direcionar ao auditório para a apresentação musical que antecede a abertura do evento.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Bernan e Gabi</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay16')">&times;</span>
+            </div>
+            
+        </section>
+
+        <section id="card-overlay17" class=" card-overlay cards-popup overlay overlay11">
+            <div  class="cards-prog  card-popup">
+                <div class="img-card-prog">
+                    <img src="IMAGENS/Israel.jpeg" alt="">
+                </div>
+                <div class="txt-prog">
+                    <h2>26 de Setembro | 19:00 às 21:00</h2>
+                    <h1>Escolas Sustentáveis: Inovação e Tecnologias no Sul do Piauí</h1>
+                    <p id="linha3">__________</p>
+                    <div class="desc-atv">
+                        <h3>Esta oficina visa proporcionar aos educadores da Rede Pública do Sul do Piauí e estudantes interessados pela temática, uma mentoria prática, apresentando ferramentas metodológicas e instrumentos que facilitam a implementação de atividades voltadas a sustentabilidade no ambiente escolar. Alinhada com os 17 Objetivos de Desenvolvimento Sustentável (ODS), a capacitação também foca na aplicação de tecnologias sociais adequadas às demandas específicas da região.</h3>
+                    </div>
+                    <div class="titular-atv">
+                        <span>Prof. Me. Israel Lobato Rocha</span>
+                    </div>
+                </div>
+                <span class="close" onclick="fechar_modal('card-overlay17')">&times;</span>
+            </div>
+            
+        </section>
+
+
+        <section id="palestrantes" class="palestrantes">  
+            <h1 class="titulo-palestrante">PALESTRANTES</h1>         
+            <div>
+
+                <div class="cards-palestrantes-left">            
+                    <div class="conteudo">
+                    <div class="txt-palestrante-left">
+                        <h2>TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas</h2>
+                        <h1>Maria Rebello</h1>
+                        <div class="area-tematica">
+                            <span>Inovação</span>
+                            <span>Propriedade Intelectual</span>
+                        </div>
+                        <div class="desc-palestrante">
+                            <p>Contadora, Especialista em gestão empresarial, Mestre em Propriedade Intelectual e TT para Inovação. Empresária há mais de 10 anos nas áreas de propriedade intelectual e gestão da inovação, Consultora e Instrutora, Gerente de Inovação da Investe Piauí e supervisora do programa Sebrae na sua empresa.</p>
+                        </div>
+                    </div>
+                        <div class="links-palestrante-left">
+                            <a href="https://www.instagram.com/mariarebello?igsh=ZnpkZW9uNTIyZHl5" style="padding-right: 8px;" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/maria rebello.jpeg" alt="">
+                        </div>
+                    
+                </div>
+
+                <div class="cards-palestrantes-right">
+                    <div class="img-card-palestrante-right">
+                        <img src="IMAGENS/Coutinho.jpeg" alt="">
+                    </div>  
+                    <div class="infos-palestrante">
+                    
+                        <div class="txt-palestrante">
+                            <h2>TALK SHOW - Paulo Coutinho e Maria Rebello - Entrevistados por Robson Freitas</h2>
+                            <h1>Paulo Coutinho</h1>
+                            <div class="area-tematica">
+                                <span>Inovação</span>
+                                <span>Empreendedorismo</span>
+                            </div>
+                            <div class="desc-palestrante">
+                                <p>Empresário viciado em inovação e criatividade. Consultor especialista em Tração, Transformação Digital e Inovação. Possui experiência nas áreas de Inovação, empreendedorismo, planejamento empresarial, fomento e acesso a mercado. Na linha de apoio, incentivo e desenvolvimento de startups, atua como consultor para pré, aceleração e mkt & vendas focado em tração e acesso a novos mercados e integração FIGITAL levando negócios do modelo físico para o digital.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="links-palestrante">
+                            <a href="https://www.instagram.com/paulocoutinho.br?igsh=MWNueWpiNXV0ZjZrdw==" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/pccoutinhobr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+        
+                <div class="cards-palestrantes-left">            
+                    <div class="conteudo">
+                    <div class="txt-palestrante-left">
+                        <h2> PALESTRA - CYBEREDUC: CIBERSEGURANÇA NA EDUCAÇÃO PÚBLICA
+</h2>
+                        <h1>Prof. Keoma de Sousa Coelho</h1>
+                        <div class="area-tematica">
+                            <span>Cyber Segurança</span>
+                            <span>Análise de Dados</span>
+                        </div>
+                        <div class="desc-palestrante">
+                            <p>Tecnólogo em Processamento de Dados pela AESPI, pós-graduado em redes de computadores com ênfase em certificação Linux LPI e segurança corporativa (Faculdade Santo Agostinho), especialização em banco de dados (Universidade São Judas Tadeu), especialização em inteligência artificial na PUC Minas, Pós graduação em análise de dado e MBA em Big Data e inteligência competitiva pelo Descomplica.</p>
+                        </div>
+                    </div>
+                        <div class="links-palestrante-left">
+                            <a href="https://www.instagram.com/sousakeoma?igsh=MXYzM3NkaGQ4bWs1"  target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/keoma-sousa-55a21b47?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/Keoma.jpeg" alt="">
+                        </div>
+                    
+                </div>
+
+                <div class="cards-palestrantes-right">
+                    <div class="img-card-palestrante-right">
+                        <img src="IMAGENS/Cristiano.jpeg" alt="">
+                    </div>  
+                    <div class="infos-palestrante">
+                    
+                        <div class="txt-palestrante">
+                            <h2>PALESTRA - DevSecOps</h2>
+                            <h1>Cristiano Altino Cavalcante</h1>
+                            <div class="area-tematica">
+                                <span>DevOps</span>
+                                <span>Cyber Segurança</span>
+                            </div>
+                            <div class="desc-palestrante">
+                                <p>Sou Administrador de Redes e de Sistemas desde 2009, Desenvolvedor Python desde 2014 com foco em infraestrutura voltados à Data Center e também sou Administrador de Banco de Dados desde 2019.
+
+                                    Tenho formação em Defesa Cibernética pela Estácio e contribuo em projetos de infraestrutura tanto em órgão público quanto em empresa privada focados em automação, cibersegurança e escalabilidade.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="links-palestrante">
+                            
+                            <a href="https://www.linkedin.com/in/844b5138?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="cards-palestrantes-left">            
+                    <div class="conteudo">
+                    <div class="txt-palestrante-left">
+                        <h2> PALESTRA - Integridade Acadêmica - Como evitar o plágio e garantir a originalidade em projetos de Inovação tecnológica</h2>
+                        <h1>Dalson Carvalho</h1>
+                        <div class="area-tematica">
+                            <span>Inteligência Artificial</span>
+                            <span>Inovação</span>
+                        </div>
+                        <div class="desc-palestrante">
+                            <p>Cineasta graduado pela Academia Internacional de Cinema (AIC) e especialista em Edição de Vídeo pela New York Film Academy (NYFA) e consultor com pós-graduação em Inteligência Artificial e Mestrado em Inovação e Empreendedorismo. Dalson Carvalho é especialista em Realidade Virtual, Inteligência Artificial e tecnologias emergentes. Com uma trajetória marcada pela inovação, é referência no mercado audiovisual e na aplicação de soluções tecnológicas em diversas áreas, incluindo empreendedorismo e educação. Ministra palestras e cursos pelo SEBRAE-PI, com foco em como Inteligência Artificial e Realidade Virtual podem transformar a comunicação e os negócios. Atualmente está cursando Jogos Digitais e Neurociência do Comportamento.</p>
+                        </div>
+                    </div>
+                        <div class="links-palestrante-left">
+                            <a href="https://www.instagram.com/dalsoncarvalho?igsh=djdyN3ZvZXZjMTFt" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/dalson-carvalho?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/Dalson.jpeg" alt="">
+                        </div>
+                    
+                </div>
+
+                <div class="cards-palestrantes-right">
+                    <div class="img-card-palestrante-right">
+                        <img src="IMAGENS/Raimundo.jfif" alt="">
+                    </div>  
+                    <div class="infos-palestrante">
+                    
+                        <div class="txt-palestrante">
+                            <h2>PALESTRA - Investigação Cibernética em Fontes Abertas</h2>
+                            <h1>Raimundo Neto</h1>
+                            <div class="area-tematica">
+                                <span>Cyber Segurança</span>
+                                <span>Redes</span>
+                            </div>
+                            <div class="desc-palestrante">
+                                <p>Perito AdHoc Computacional Forense. Mestre em Segurança de Redes de Computadores. Consultor em CyberSegurança, Lei Geral Proteção de Dados e Compliance Digital. Professor de Graduação e Pós Graduação na área de Tecnologia da Informação. CEO The Forense.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="links-palestrante">
+                            <a href="https://www.linkedin.com/in/raimundo-neto-85a7462a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="cards-palestrantes-left">            
+                    <div class="conteudo">
+                    <div class="txt-palestrante-left">
+                        <h2> PALESTRA - Escolas Sustentáveis: Inovação e Tecnologias no Sul do Piauí</h2>
+                        <h1>Prof. Me. Israel Lobato Rocha</h1>
+                        <div class="area-tematica">
+                            <span>Gestão Ambiental</span>
+                            <span>Desenvolvimento Sustentável</span>
+                        </div>
+                        <div class="desc-palestrante">
+                            <p>Graduado em Tecnologia em Gestão Ambiental pelo Instituto Federal de Educação, Ciência e Tecnologia do Piauí (2014), especialista em Gestão e Educação Ambiental pela Universidade Estadual do Piauí (2016) e mestre em Conservação de Recursos Naturais do Cerrado pelo Instituto Federal Goiano (2019). Atualmente é professor de Ensino Básico, Técnico e Tecnológico do Instituto Federal do Piauí - Campus Corrente, Coordenador do Curso de Tecnologia em Gestão Ambiental e líder do Núcleo de Estudos e Pesquisas em Conservação Ambiental do Cerrado (NEP/CAC).</p>
+                        </div>
+                    </div>
+                        <div class="links-palestrante-left">
+                            <a href="https://www.instagram.com/israel.lobato_?igsh=MTU2OGVobWxlcjly" target="_blank">
+                                <i class="fab fa-instagram" style="padding-right: 8px;"></i>
+                            </a>
+                           
+                        </div>
+                        </div>
+
+                        <div class="img-card-palestrante-left">
+                            <img src="IMAGENS/Israel.jpeg" alt="">
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="minicursos" class="minicursos">
+            <h1>MINICURSOS</h1>
+
+            <div class="minicursos-row">
+                <div class="minicurso">
+                    <img src="IMAGENS/Ronaldo.jpeg" alt="">
+                    <div class="minicurso-body">
+                        <h4 class="minicurso-data">25/09/2024 - 08hrs às 12hrs</h4>
+                        <h2>INTRODUÇÃO AO MUNDO DA INTERNET DAS COISAS (IOT), COM ÊNFASE NO USO DE SOFTWARE LIVRE</h2>
+                        <h4 class="minicurso-palestrante">Ronaldo Pires Borges</h4>
+                        <p>Serão abordados os conceitos fundamentais de IoT, seguidos de uma parte prática que inclui a programação de dispositivos conectados. Os participantes aprenderão como configurar, programar e monitorar dispositivos IoT, além de explorar ferramentas de código aberto para o gerenciamento e visualização de dados em tempo real. O minicurso proporcionará uma compreensão básica de como funcionam os sistemas IoT.</p>
+                    </div>
+                </div>
+
+                <div class="minicurso">
+                    <img src="IMAGENS/Keoma.jpeg" alt="">
+                    <div class="minicurso-body">
+                        <h4 class="minicurso-data">25/09/2024 - 14hrs às 18hrs</h4>
+                        <h2>PENTEST</h2>
+                        <h4 class="minicurso-palestrante">Prof. Keoma de Sousa Coelho</h4>
+                        <p>Descubra como se proteger no ambiente digital e veja na prática como os hackers atuam!
+                            Participe do nosso evento exclusivo, e aprenda a identificar e mitigar riscos digitais, conheça as táticas utilizadas por hackers e explore o universo do pentest com demonstrações ao vivo.
+                            </p>
+                    </div>
+                </div>
+            
+                <div class="minicurso">
+                    <img src="IMAGENS/Andriella.jpeg" alt="">
+                    <div class="minicurso-body">
+                        <h4 class="minicurso-data">26/09/2024 - 08hrs às 12hrs</h4>
+                        <h2>Sustentabilidade: Inovação e tecnologias sociais em escolas do sul do Piauí
+                        </h2>
+                        <h4 class="minicurso-palestrante">Andriella Maciel da Cruz</h4>
+                        <p>Esta oficina visa proporcionar aos educadores da Rede Pública do Sul do Piauí e estudantes interessados pela temática, uma mentoria prática, apresentando ferramentas metodológicas e instrumentos que facilitam a implementação de atividades voltadas a sustentabilidade no ambiente escolar. Alinhada com os 17 Objetivos de Desenvolvimento Sustentável (ODS), a capacitação também foca na aplicação de tecnologias sociais adequadas às demandas específicas da região.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="minicurso">
+                    <img src="IMAGENS/CARLINHOS.jpeg" alt="">
+                    <div class="minicurso-body">
+                        <h4 class="minicurso-data">26/09/2024 - 08hrs às 12hrs & 14hrs às 18hrs</h4>
+                        <h2>Consumindo API com React e boas práticas no desenvolvimento frontend
+                        </h2>
+                        <h4 class="minicurso-palestrante">Carlos Augusto Brandão</h4>
+                        <p>O objetivo será apresentar o React de maneira simples e divertida através da implementação de um sistema web de consulta na base oficial da Marvel. Além dos conceitos primordiais do React, será ensinado sobre paginação, consumo de API com autenticação e boas práticas no desenvolvimento frontend. No contexto da Inovação, React é uma ferramenta oportuna pois rompe as barreiras dos navegadores servindo de  ótima escolha para validar ideias e e em projetos de larga escala para além da web. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcerias" class="parcerias">
+            <div class="titulo-parcerias">
+                <h2>PARCERIAS</h2>
+                <h1>CONHEÇA OS NOSSOS PATROCINADORES</h1>
+                <p>__________</p>
+            </div>
+            <div class="add-patro">
+                <h2>A SUA MARCA PODE ESTAR AQUI</h2>
+                <a href="https://wa.me/558981104677/?text=Olá!%20Eu%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais"><button>QUERO PATROCINAR</button></a>
+            </div>
+            <div class="marcas-imgs">
+                <img src="IMAGENS/Logos INOVA/Creusa.png" alt="">
+                <img src="IMAGENS/Logos INOVA/virtex.png" alt="">
+                <img src="IMAGENS/Logos INOVA/Gellatts.png" alt="">
+                <img src="IMAGENS/Logos INOVA/laser.png" alt="">
+                <img src="IMAGENS/Logos INOVA/Diva.png" alt="">
+                <img src="IMAGENS/Logos INOVA/buffallobil.png" alt="">
+                <img src="IMAGENS/Logos INOVA/tudo_limpo.png" alt="">
+                <img src="IMAGENS/Logos INOVA/Donna.png" alt="">
+                <img src="IMAGENS/Logos INOVA/Eudora.png" alt="">
+                <img src="IMAGENS/Logos INOVA/Ib.png" alt="">
+                <img src="IMAGENS/Logos INOVA/useprata.jpeg" alt="">
+                <img src="IMAGENS/Logos INOVA/luxury.jpeg" alt="">
+                <img src="IMAGENS/Logos INOVA/quintorebello.png" alt="">
+                <img src="IMAGENS/Logos INOVA/marisburguer.png" alt="">
+                <img src="IMAGENS/Logos INOVA/Sal.png" alt="">
+
+            </div>       
+        </section>
+
+        <section id="duvidas" class="duvidas">
+            <h1>DÚVIDAS FREQUENTES</h1>
+
+            <div class="duvida" onmousedown="toggleDiv('duvida1', 'seta1');">
+                <div class="duvida-pergunta">
+                    <h2>Como faço para me inscrever no evento?</h2>
+                    <img id="seta1" src="IMAGENS/arrow_forward_ios_down.png" alt="">
+                </div>
+                <div id="duvida1"class="duvida-resposta">
+                    <h3>Para se inscrever no evento, basta acessar o site oficial e clicar no botão "Inscreva-se". Você será direcionado a um formulário de inscrição onde poderá colocar suas informações e escolher suas atividades.</h3>
+                </div>
+            </div>
+
+            <div class="duvida" onmousedown="toggleDiv('duvida2', 'seta2');">
+                <div class="duvida-pergunta">
+                    <h2>Como faço para me inscrever só nos minicursos?</h2>
+                    <img id="seta2" src="IMAGENS/arrow_forward_ios_down.png" alt="">
+                </div>
+                <div id="duvida2"class="duvida-resposta">
+                    <h3>Ao entrar no link do formulário de inscrição, após preencher seu dados deve-se desconsiderar as opções de paletras e escolher apenas os minicursos que desejar, vale ainda ressaltar que não se deve realizar a inscrição em minicursos que ocorrerão em um mesmo horário.</h3>
+                </div>
+            </div>
+            
+            <div class="duvida" onmousedown="toggleDiv('duvida3', 'seta3');">
+                <div class="duvida-pergunta">
+                    <h2>Como faço para me inscrever só nas palestras?</h2>
+                    <img id="seta3" src="IMAGENS/arrow_forward_ios_down.png" alt="">
+                </div>
+                <div id="duvida3"class="duvida-resposta">
+                    <h3>Para se inscrever apenas nas palestras, acesse o site oficial do evento e no formulário de inscrição preencha seus dados e selecione apenas a opção "Palestras".</h3>
+                </div>
+            </div>
+
+            <div class="duvida" onmousedown="toggleDiv('duvida4', 'seta4');">
+                <div class="duvida-pergunta">
+                    <h2>O evento terá certificado?</h2>
+                    <img id="seta4" src="IMAGENS/arrow_forward_ios_down.png" alt="">
+                </div>
+                <div id="duvida4"class="duvida-resposta">
+                    <h3>Sim, todos os participantes receberão certificados de participação.</h3>
+                </div>
+            </div>
+
+            <div class="duvida" onmousedown="toggleDiv('duvida5', 'seta5');">
+                <div class="duvida-pergunta">
+                    <h2>Vai ter apresentação de banner?</h2>
+                    <img id="seta5" src="IMAGENS/arrow_forward_ios_down.png" alt="">
+                </div>
+                <div id="duvida5"class="duvida-resposta">
+                    <h3>Não, o evento não contará com apresentações de banner. No entanto, teremos outras atividades, como palestras e minicursos.</h3>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <section class="redes-sociais">
+        <img src="IMAGENS/INOVA-LOGO-FAKE.png" alt="">
+        <div>
+        <p>Entre em contato</p>
+        <div class="icones-redes">
+            <span>
+                <a href="https://www.instagram.com/inovaifpi/"><i class="bi bi-instagram"></i></a>           
+            </span>
+            <span>
+                <a href="https://www.tiktok.com/@inovaifpi?_t=8ppycjCE8Ri&_r=1"><i class="bi bi-tiktok"></i></a>           
+            </span>
+        </div>
+        <p>inovaifpi@gmail.com</p>
+    </div>
+    </section>
+    <a href="#navbar" class="botao-topo">
+            <i class="bi bi-arrow-up"></i>
+    </a>
+    <footer>
+        <span>© 2024 Inova IFPI | Alguns direitos reservados</span>
+    </footer>
+
+</body>
+</html>
