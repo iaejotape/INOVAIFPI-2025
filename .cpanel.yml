@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOY_DIR=/home1/inovai88/public_html/feature-2025
+    - /usr/bin/git pull origin main
