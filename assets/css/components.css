@@ -991,6 +991,10 @@
   border: 1px solid var(--gray-200);
 }
 
+.faq-item button{
+  outline: none;  
+}
+
 .faq-item:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
