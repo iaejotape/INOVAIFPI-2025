@@ -1,6 +1,10 @@
-/* ===== LAYOUT CSS ===== */
 
-/* ===== MAIN LAYOUT ===== */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
 .main {
   margin-top: 90px; /* Account for fixed header */
   padding-left: 4px;
@@ -8,7 +12,6 @@
   position: relative;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   background: linear-gradient(135deg, var(--gray-900) 0%, var(--black) 100%);
   color: var(--white);
@@ -16,16 +19,6 @@
   margin-top: var(--spacing-20);
   position: relative;
   overflow: hidden;
-}
-
-.footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--gradient-primary);
 }
 
 .footer-content {

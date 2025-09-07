@@ -79,13 +79,7 @@
     padding-right: 2px;
   }
 
-  /* Animated Border */
-  .animated-border::before,
-  .animated-border::after,
-  body::after {
-    width: 2px;
-    height: 2px;
-  }
+  
 
   /* Hero Section */
   .hero {
@@ -620,7 +614,6 @@
 
 /* ===== PRINT STYLES ===== */
 @media print {
-  .animated-border,
   .loading-screen,
   .nav-toggle,
   .back-to-top,

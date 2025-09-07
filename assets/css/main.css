@@ -211,55 +211,7 @@ body {
   font-weight: var(--font-weight-medium);
 }
 
-/* ===== ANIMATED BORDER ===== */
-.animated-border {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  z-index: var(--z-fixed);
-}
 
-.animated-border::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--gradient-secondary);
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
-}
-
-.animated-border::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 4px;
-  background: var(--gradient-secondary);
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite reverse;
-}
-
-/* Right border via pseudo-element */
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 4px;
-  background: var(--gradient-secondary);
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
-  pointer-events: none;
-  z-index: var(--z-fixed);
-}
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4, h5, h6 {
@@ -619,7 +571,6 @@ select:focus {
 
 /* ===== PRINT STYLES ===== */
 @media print {
-  .animated-border,
   .loading-screen,
   .nav-toggle,
   .back-to-top,
