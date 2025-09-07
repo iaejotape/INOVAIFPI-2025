@@ -294,8 +294,7 @@
   top: 90px;
   background: var(--gradient-primary);
   padding: var(--spacing-8) 0;
-  margin: var(--spacing-16) var(--spacing-1);
-  border-radius: var(--radius-2xl);
+  border-radius: 0 0 30px 30px;
   box-shadow: var(--shadow-xl);
   z-index: var(--z-sticky);
 }
@@ -747,7 +746,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 205, 202, 0.8) 100%);
   display: flex;
   align-items: flex-end;
   justify-content: center;
