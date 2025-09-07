@@ -43,7 +43,7 @@
 .nav-logo .logo:hover {
   transform: scale(1.05);
 }
-
+//
 .nav-menu {
   display: flex;
   list-style: none;
