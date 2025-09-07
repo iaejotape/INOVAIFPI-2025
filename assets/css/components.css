@@ -65,7 +65,7 @@
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -128,7 +128,11 @@
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, rgba(59, 146, 162, 0.03) 0%, rgba(139, 97, 194, 0.03) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 146, 162, 0.03) 0%,
+    rgba(139, 97, 194, 0.03) 100%
+  );
   border-radius: var(--radius-3xl);
   margin: var(--spacing-20) var(--spacing-1) var(--spacing-16);
   overflow: hidden;
@@ -535,7 +539,7 @@
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: var(--spacing-4);
   top: 0;
@@ -563,7 +567,7 @@
 }
 
 .activity-card::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -var(--spacing-8);
   top: 50%;
@@ -577,13 +581,18 @@
 }
 
 .activity-card::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(59, 146, 162, 0.05), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 146, 162, 0.05),
+    transparent
+  );
   transition: left var(--transition-slow);
 }
 
@@ -599,7 +608,11 @@
 
 .activity-card.featured {
   border-color: var(--secondary-color);
-  background: linear-gradient(135deg, rgba(139, 97, 194, 0.05) 0%, rgba(77, 13, 159, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(139, 97, 194, 0.05) 0%,
+    rgba(77, 13, 159, 0.05) 100%
+  );
 }
 
 .activity-card.featured::before {
@@ -609,7 +622,11 @@
 
 .activity-card.workshop {
   border-color: var(--accent-color);
-  background: linear-gradient(135deg, rgba(77, 13, 159, 0.05) 0%, rgba(59, 146, 162, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(77, 13, 159, 0.05) 0%,
+    rgba(59, 146, 162, 0.05) 100%
+  );
 }
 
 .activity-card.workshop::before {
@@ -746,7 +763,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 205, 202, 0.8) 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 205, 202, 0.8) 100%
+  );
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -819,33 +840,39 @@
   letter-spacing: 0.5px;
 }
 
-/* ===== MINICOURSES SECTION ===== */
+/* ===== MINICURSOS SECTION ===== */
+.minicursos,
 .minicourses {
-  background: var(--white);
+  background: var(--light-bg);
   border-radius: var(--radius-3xl);
   margin: var(--spacing-16) var(--spacing-1);
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--gray-200);
 }
 
+.minicursos-grid,
 .minicourses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: var(--spacing-8);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-8);
 }
 
+.minicurso-card,
 .minicourse-card {
-  background: var(--gray-50);
+  background: var(--white);
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-8);
+  padding: var(--spacing-6);
   border: 2px solid var(--gray-200);
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
+.minicurso-card::before,
 .minicourse-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -854,49 +881,54 @@
   background: var(--gradient-primary);
 }
 
+.minicurso-card:hover,
 .minicourse-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
   border-color: var(--primary-color);
 }
 
+.minicurso-icon,
 .minicourse-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: var(--gradient-primary);
   color: var(--white);
-  border-radius: var(--radius-2xl);
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-6);
-}
-
-.minicourse-title {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--gray-900);
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-4);
 }
 
+.minicurso-title,
+.minicourse-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-3);
+}
+
+.minicurso-description,
 .minicourse-description {
   font-size: var(--font-size-base);
   color: var(--gray-600);
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
 }
 
+.minicurso-details,
 .minicourse-details {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-3);
+  gap: var(--spacing-2);
 }
 
 .detail {
   display: flex;
   align-items: center;
-  gap: var(--spacing-3);
+  gap: var(--spacing-2);
   font-size: var(--font-size-sm);
   color: var(--gray-700);
 }
@@ -904,6 +936,27 @@
 .detail i {
   color: var(--primary-color);
   width: 16px;
+}
+
+/* Responsividade para minicursos */
+@media (max-width: 768px) {
+  .minicursos-grid,
+  .minicourses-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  .minicurso-card,
+  .minicourse-card {
+    padding: var(--spacing-4);
+  }
+
+  .minicurso-icon,
+  .minicourse-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
 }
 
 /* ===== PARTNERS SECTION ===== */
@@ -1159,4 +1212,3 @@
   color: var(--gray-600);
   line-height: var(--line-height-relaxed);
 }
-
