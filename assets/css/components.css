@@ -43,7 +43,7 @@
 .nav-logo .logo:hover {
   transform: scale(1.05);
 }
-//
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -298,7 +298,8 @@
   top: 90px;
   background: var(--gradient-primary);
   padding: var(--spacing-2) 0;
-  border-radius: 0 0 30px 30px;
+  margin: var(--spacing-4) var(--spacing-1);
+  border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
   z-index: var(--z-sticky);
 }
@@ -307,7 +308,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-2);
+  gap: var(--spacing-4);
   text-align: center;
 }
 
@@ -766,7 +767,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(0, 205, 202, 0.8) 100%
+    rgba(0, 0, 0, 0.8) 100%
   );
   display: flex;
   align-items: flex-end;
@@ -840,37 +841,31 @@
   letter-spacing: 0.5px;
 }
 
-/* ===== MINICURSOS SECTION ===== */
-.minicursos,
+/* ===== MINICOURSES SECTION ===== */
 .minicourses {
-  background: var(--light-bg);
+  background: var(--white);
   border-radius: var(--radius-3xl);
   margin: var(--spacing-16) var(--spacing-1);
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--gray-200);
 }
 
-.minicursos-grid,
 .minicourses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--spacing-6);
-  margin-top: var(--spacing-8);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-8);
 }
 
-.minicurso-card,
 .minicourse-card {
-  background: var(--white);
+  background: var(--gray-50);
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-6);
+  padding: var(--spacing-8);
   border: 2px solid var(--gray-200);
   transition: all var(--transition-normal);
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
 }
 
-.minicurso-card::before,
 .minicourse-card::before {
   content: "";
   position: absolute;
@@ -881,54 +876,49 @@
   background: var(--gradient-primary);
 }
 
-.minicurso-card:hover,
 .minicourse-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-xl);
   border-color: var(--primary-color);
 }
 
-.minicurso-icon,
 .minicourse-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background: var(--gradient-primary);
   color: var(--white);
-  border-radius: var(--radius-xl);
-  font-size: var(--font-size-xl);
+  border-radius: var(--radius-2xl);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-6);
+}
+
+.minicourse-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-900);
   margin-bottom: var(--spacing-4);
 }
 
-.minicurso-title,
-.minicourse-title {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--gray-900);
-  margin-bottom: var(--spacing-3);
-}
-
-.minicurso-description,
 .minicourse-description {
   font-size: var(--font-size-base);
   color: var(--gray-600);
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
 }
 
-.minicurso-details,
 .minicourse-details {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: var(--spacing-3);
 }
 
 .detail {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2);
+  gap: var(--spacing-3);
   font-size: var(--font-size-sm);
   color: var(--gray-700);
 }
@@ -936,27 +926,6 @@
 .detail i {
   color: var(--primary-color);
   width: 16px;
-}
-
-/* Responsividade para minicursos */
-@media (max-width: 768px) {
-  .minicursos-grid,
-  .minicourses-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-4);
-  }
-
-  .minicurso-card,
-  .minicourse-card {
-    padding: var(--spacing-4);
-  }
-
-  .minicurso-icon,
-  .minicourse-icon {
-    width: 50px;
-    height: 50px;
-    font-size: var(--font-size-lg);
-  }
 }
 
 /* ===== PARTNERS SECTION ===== */
@@ -1043,11 +1012,10 @@
   transition: all var(--transition-normal);
   border: 1px solid var(--gray-200);
 }
-
-.faq-item button{
-  outline: none;  
+.faq-item button {
+  appearance: none;
+  outline: none;
 }
-
 .faq-item:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
