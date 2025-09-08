@@ -284,7 +284,6 @@
 .banner-section {
   display: flex;
   justify-content: center; 
-  padding: var(--spacing-4) 0 0 0;
   
 }
 
