@@ -36,7 +36,7 @@
 
   .nav-menu {
     position: fixed;
-    top: 70px;
+    top: 51px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 70px);
@@ -121,7 +121,7 @@
 
   /* Timer Section */
   .timer-section {
-    top: 77px;
+    top: 60px;
     padding: var(--spacing-6) 0;
     margin: var(--spacing-12) var(--spacing-1);
   }
@@ -600,7 +600,7 @@
   .timer-section {
     position: relative;
     top: auto;
-    margin: var(--spacing-8) var(--spacing-1);
+    margin: var(--spacing-4) var(--spacing-1);
   }
 
   .nav-menu {
