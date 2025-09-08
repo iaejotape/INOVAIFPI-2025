@@ -674,3 +674,21 @@
 
 })();
 
+(() => {
+  const timer = document.querySelector('.timer-section');
+  if (!timer) return;
+
+  const SHRINK_AT = 300; // ajuste o ponto de encolher conforme necessário
+
+  const onScroll = () => {
+    if (window.scrollY > SHRINK_AT) {
+      timer.classList.add('compact');
+    } else {
+      timer.classList.remove('compact');
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // aplica estado correto ao carregar
+})();
+
