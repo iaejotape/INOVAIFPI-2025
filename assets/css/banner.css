@@ -33,11 +33,10 @@
 .banner-image {
   width: 100%;
   max-width: 100%;
-  height: auto; /* mantém proporção */
-  /* object-fit: contain;  não é necessário com height:auto */
+  height: auto;
   border-radius: 0;
   transition: transform var(--transition-slow);
-  display: block; /* elimina gaps inline */
+  display: block;
 }
 
 .banner-image:hover {
