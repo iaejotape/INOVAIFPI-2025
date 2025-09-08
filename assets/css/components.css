@@ -11,7 +11,7 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-lg);
-  z-index: var(--z-sticky);
+  z-index: 100;
   transition: all var(--transition-normal);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -21,9 +21,6 @@
   box-shadow: var(--shadow-xl);
 }
 
-.navbar {
-  padding: var(--spacing-4) 0;
-}
 
 .nav-container {
   display: flex;
@@ -35,7 +32,7 @@
 }
 
 .nav-logo .logo {
-  height: 45px;
+  height: 100px;
   width: auto;
   transition: transform var(--transition-normal);
 }
@@ -295,13 +292,13 @@
 /* ===== TIMER SECTION ===== */
 .timer-section {
   position: sticky;
-  top: 90px;
+  top: 110px;
   background: var(--gradient-primary);
   padding: var(--spacing-2) 0;
   margin: var(--spacing-4) var(--spacing-1);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
-  z-index: var(--z-sticky);
+  z-index: 30;
 }
 
 .timer-content {
