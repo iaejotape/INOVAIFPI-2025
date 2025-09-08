@@ -420,6 +420,7 @@
   .programming-nav {
     grid-template-columns: auto 1fr auto;
     text-align: center;
+    z-index: var(--z-dropdown);
   }
 
   .day-controls {
