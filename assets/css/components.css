@@ -281,6 +281,24 @@
   animation-delay: 2s;
 }
 
+.banner-section {
+  display: flex;
+  justify-content: center; 
+  padding: var(--spacing-4) 0 0 0;
+  
+}
+
+.banner-container {
+  max-width: 1890px; 
+  width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto; 
+  border-radius: 8px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 
 .shape-3 {
