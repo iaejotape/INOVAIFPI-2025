@@ -35,13 +35,9 @@
   max-width: 100%;
   height: auto;
   border-radius: 0;
-  transition: transform var(--transition-slow);
   display: block;
 }
 
-.banner-image:hover {
-  transform: scale(1.02);
-}
 
 /* Banner responsivo */
 @media (max-width: 768px) {
