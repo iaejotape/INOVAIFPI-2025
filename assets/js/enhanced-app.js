@@ -85,64 +85,82 @@
   // Modal data for activities
   const modalData = {
     'modal-1': {
-      title: 'Credenciamento',
-      date: '07 de Outubro - 18:00',
-      description: 'Recepção dos participantes e entrega de materiais do evento. Local: Hall de entrada do IFPI Campus Floriano.',
-      instructor: 'Equipe Organizadora'
+      title: 'Palestra e Oficina',
+      date: '07 de Outubro - 08:00 às 10:00',
+      description: 'Palestra sobre Saúde Mental e Física no Mundo Digital seguida de oficina prática com técnicas de respiração e micro exercícios para liberar estresse. Local: Auditório.',
+      instructor: 'Luna Rhara Martins Moura'
     },
     'modal-2': {
-      title: 'Apresentação Cultural',
-      date: '07 de Outubro - 18:15',
-      description: 'Valorização da cultura regional com apresentações artísticas locais. Uma celebração da diversidade cultural do Piauí.',
-      instructor: 'Grupos Culturais Locais'
+      title: 'Palestra de Abertura',
+      date: '07 de Outubro - 19:00 às 21:30',
+      description: 'Mesa Redonda sobre Inovações Computacionais no Setor de Saúde com palestrantes do Sebrae e Felipe do Instituto Afeto. Mediado pelo Prof Dr. Robson Freitas. Local: Auditório do IFPI.',
+      instructor: 'Mesa Redonda - Sebrae e Instituto Afeto'
     },
     'modal-3': {
-      title: 'Abertura Oficial',
-      date: '07 de Outubro - 18:45',
-      description: 'Cerimônia oficial de abertura do evento com autoridades locais e apresentação da programação completa.',
-      instructor: 'Direção do IFPI'
+      title: 'Oficina 1',
+      date: '08 de Outubro - 08:00 às 10:00',
+      description: 'Oficina ministrada pela enfermeira do CAPS com foco em saúde mental e bem-estar. Local: Auditório.',
+      instructor: 'Bianca - Enfermeira do Caps'
     },
     'modal-4': {
-      title: 'Palestra Magna',
-      date: '07 de Outubro - 19:00',
-      description: 'Palestra principal sobre Inovação e Propriedade Intelectual no contexto atual. Uma visão abrangente sobre o futuro da inovação.',
-      instructor: 'Paulo Coutinho'
+      title: 'Mini Curso 2',
+      date: '08 de Outubro - 08:00 às 12:00',
+      description: 'Minicurso ministrado pelo Prof Ronaldo Pires Borges do IFPI - Floriano. SIAPE: 1755274. Observação: Precisará de Laboratório.',
+      instructor: 'Prof Ronaldo Pires Borges - IFPI Floriano'
     },
     'modal-5': {
-      title: 'Minicurso - Internet das Coisas (IoT)',
+      title: 'Mini Curso 3 - Análise de Dados na Saúde',
       date: '08 de Outubro - 08:00 às 12:00',
-      description: 'Introdução prática ao mundo da IoT com ênfase em software livre. Aprenda conceitos fundamentais e tenha experiência hands-on com dispositivos reais.',
-      instructor: 'Dalson Santos'
+      description: 'Um guia prático para preparação e exploração de dados na área da saúde. Ministrado por Ivan Rodrigues do IFPI - São Raimundo. SIAPE: 1294193. Observação: Precisará de Laboratório e não precisa de dormitório.',
+      instructor: 'Ivan Rodrigues - IFPI São Raimundo'
     },
     'modal-6': {
-      title: 'Minicurso - Pentest e Segurança',
-      date: '08 de Outubro - 14:00 às 17:00',
-      description: 'Aprenda técnicas de teste de penetração e segurança da informação. Conheça ferramentas e metodologias utilizadas por profissionais da área.',
-      instructor: 'Israel Oliveira'
+      title: 'Mini Curso 4 - Microcontroladores',
+      date: '08 de Outubro - 08:00 às 12:00',
+      description: 'Minicurso sobre microcontroladores ministrado pelos alunos do EbarcaTech do IFPI - Floriano. Observação: Precisa de Laboratório.',
+      instructor: 'Alunos do EbarcaTech - IFPI Floriano'
     },
     'modal-7': {
-      title: 'Credenciamento Vespertino',
-      date: '08 de Outubro - 18:00',
-      description: 'Credenciamento para participantes do período vespertino. Recepção e orientações para as atividades do dia.',
-      instructor: 'Equipe Organizadora'
+      title: 'Oficina - A Revolução Tecnológica do Bem Estar',
+      date: '08 de Outubro - 15:30 às 17:30',
+      description: 'Oficina sobre como a tecnologia pode revolucionar o bem-estar das pessoas. Ministrada por Marcelo Prado Santiago do CTF - Colégio Técnico de Floriano. SIAPE: 2714888. Local: Auditório.',
+      instructor: 'Marcelo Prado Santiago - CTF'
     },
     'modal-8': {
-      title: 'CyberEduc - Cibersegurança na Educação',
-      date: '08 de Outubro - 19:00',
-      description: 'Palestra sobre cibersegurança aplicada ao ambiente educacional. Estratégias de proteção e conscientização para instituições de ensino.',
-      instructor: 'Especialista em Segurança'
+      title: 'Palestra 1',
+      date: '08 de Outubro - 19:00 às 20:00',
+      description: 'Palestra a ser confirmada com Thais do Cais Valley. Local: Auditório do IFPI.',
+      instructor: 'A confirmar - Thais do Cais Valley'
     },
     'modal-9': {
-      title: 'Credenciamento Final',
-      date: '09 de Outubro - 18:00',
-      description: 'Último dia de credenciamento para participantes. Últimas orientações e preparação para o encerramento.',
-      instructor: 'Equipe Organizadora'
+      title: 'Palestra 2 - Criando com Inteligência Artificial',
+      date: '08 de Outubro - 20:00 às 21:30',
+      description: 'Palestra sobre criação e desenvolvimento utilizando Inteligência Artificial. Palestrante a definir do SEBRAE. Local: Auditório do IFPI.',
+      instructor: 'A Definir - SEBRAE'
     },
     'modal-10': {
-      title: 'Encerramento e Premiação',
-      date: '09 de Outubro - 19:00',
-      description: 'Cerimônia de encerramento do evento com premiação dos melhores trabalhos e agradecimentos aos participantes e patrocinadores.',
-      instructor: 'Comissão Organizadora'
+      title: 'Mini Curso 2',
+      date: '09 de Outubro - 08:00 às 12:00',
+      description: 'Minicurso ministrado por Júlio Cezar Reis Paes do Senac São Raimundo Nonato. Local: Laboratório. Observação: Precisa de dormitório.',
+      instructor: 'Júlio Cezar Reis Paes - Senac São Raimundo Nonato'
+    },
+    'modal-11': {
+      title: 'Mini Curso 3',
+      date: '09 de Outubro - 09:00 às 12:00',
+      description: 'Minicurso ministrado por Keoma Souza, João Pedro Mendes e Vitória Rafaela da ETIPI. Local: Laboratório. Observação: Precisa de Dormitório (2 Homens e 1 Mulher).',
+      instructor: 'Keoma Souza, João Pedro Mendes e Vitória Rafaela - ETIPI'
+    },
+    'modal-12': {
+      title: 'Palestra de Encerramento',
+      date: '09 de Outubro - 19:00 às 20:00',
+      description: 'Primeira palestra de encerramento do evento ministrada por Keoma da ETIPI. Local: Auditório do IFPI.',
+      instructor: 'Keoma - ETIPI'
+    },
+    'modal-13': {
+      title: 'Palestra de Encerramento Final',
+      date: '09 de Outubro - 20:00 às 21:00',
+      description: 'Palestra final de encerramento do evento. Tema a definir. Ministrada pelo Professor Otílio do IFPI - THE. Local: Auditório do IFPI.',
+      instructor: 'Professor Otílio - IFPI THE'
     }
   };
 
