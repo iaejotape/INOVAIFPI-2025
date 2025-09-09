@@ -436,41 +436,7 @@
   .countdown-number { font-size: var(--font-size-2xl); }
 }
 
-/* ===== TIMER: modo compacto ao rolar ===== */
-.timer-section.compact {
-  padding: var(--spacing-1) 0;
-}
 
-.timer-section.compact .timer-content {
-  gap: var(--spacing-2);
-  padding: var(--spacing-2) var(--spacing-4);
-}
-
-.timer-section.compact .timer-title {
-  font-size: var(--font-size-lg);
-  letter-spacing: 0.75px;
-}
-
-.timer-section.compact .countdown {
-  gap: var(--spacing-3);
-}
-
-.timer-section.compact .countdown-item {
-  padding: var(--spacing-3) var(--spacing-4);
-  width: clamp(80px, 9vw, 100px); /* tamanho uniforme no compacto */
-  aspect-ratio: 1 / 1;
-  box-sizing: border-box;
-}
-
-.timer-section.compact .countdown-number {
-  font-size: var(--font-size-2xl);
-}
-
-/* Opcional: melhora a leitura no mobile quando compacto */
-@media (max-width: 480px) {
-  .timer-section.compact .countdown-item { width: 68px; } /* largura fixa no mobile */
-  .timer-section.compact .countdown-number { font-size: var(--font-size-xl); }
-}
 
 /* ===== SECTION HEADERS ===== */
 .section-header {
@@ -990,10 +956,6 @@
   transform: scale(1.02);
   box-shadow: var(--shadow-xl);
   border-color: var(--primary-color);
-}
-
-.minicourse-card.scroll-reveal:hover {
-  transform: scale(1.02);
 }
 
 .minicourse-icon {
