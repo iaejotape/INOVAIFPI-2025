@@ -451,6 +451,33 @@
 
 /* ===== TABLET LARGE (768px - 1023px) ===== */
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* Manter navegação normal até 900px para melhor UX em tablets */
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .main {
+    margin-top: 105px; /* Ajuste para header maior */
+  }
+
+  .timer-section {
+    top: 107px;
+  }
+}
+
+/* ===== TABLET MOBILE BREAKPOINT (900px) ===== */
+@media (max-width: 900px) {
   .nav-menu {
     position: fixed;
     top: 80px;

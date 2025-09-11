@@ -345,6 +345,26 @@
   padding: var(--spacing-4) var(--spacing-6);
 }
 
+/* Botão CTA do timer com destaque especial */
+.timer-content .btn {
+  margin-top: var(--spacing-2);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-3) var(--spacing-6);
+  min-height: 48px; /* Melhor para touch */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-normal);
+}
+
+.timer-content .btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
+}
+
 
 .timer-title {
   font-size: var(--font-size-2xl);
@@ -375,7 +395,7 @@
   backdrop-filter: blur(0);
   border-radius: 24px;
   padding: var(--spacing-4) var(--spacing-5);
-  width: clamp(84px, 10vw, 112px); /* mesmo tamanho para todas */
+  width: clamp(90px, 12vw, 120px); /* Tamanho mais responsivo */
   aspect-ratio: 1 / 1;
   box-sizing: border-box;
   border: 2px solid rgba(255, 255, 255, 0.95);
@@ -432,11 +452,12 @@
   .timer-content { padding: var(--spacing-3) 0; }
   .countdown { gap: var(--spacing-2); }
   .countdown-item { 
-    width: 70px;
+    width: 75px; /* Aumentado de 70px para 75px */
     padding: var(--spacing-3); 
     border-radius: 18px;
   }
   .countdown-number { font-size: var(--font-size-2xl); }
+  .timer-title { font-size: var(--font-size-xl); } /* Melhor proporção */
 }
 
 .timer-section.compact .countdown-item {

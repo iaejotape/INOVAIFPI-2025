@@ -93,13 +93,13 @@
     'modal-2': {
       title: 'Palestra de Abertura',
       date: '07 de Outubro - 19:00 às 21:30',
-      description: 'Mesa Redonda sobre Inovações Computacionais no Setor de Saúde com palestrantes do Sebrae e Felipe do Instituto Afeto. Mediado pelo Prof Dr. Robson Freitas. Local: Auditório do IFPI.',
+      description: 'Mesa Redonda sobre Inovações no Ecossistema de Saúde: Desenvolvimento e Proteção de Propriedades Intelectuais como fator-chave com palestrantes do Sebrae e Felipe do Instituto Afeto. Mediado pelo Prof Dr. Robson Freitas. Local: Auditório do IFPI.',
       instructor: 'Mesa Redonda - Sebrae e Instituto Afeto'
     },
     'modal-3': {
       title: 'Oficina 1',
       date: '08 de Outubro - 08:00 às 10:00',
-      description: 'Oficina ministrada pela enfermeira do CAPS com foco em saúde mental e bem-estar. Local: Auditório.',
+      description: 'Oficina ministrada pela enfermeira do CAPS com foco em saúde mental e bem-estar. Local: Auditório do IFPI.',
       instructor: 'Bianca - Enfermeira do Caps'
     },
     'modal-4': {
@@ -139,10 +139,10 @@
       instructor: 'A Definir - SEBRAE'
     },
     'modal-10': {
-      title: 'Mini Curso 2',
+      title: 'Minicurso: Desenvolvendo um Psicólogo Online com JavaScript',
       date: '09 de Outubro - 08:00 às 12:00',
-      description: 'Minicurso ministrado por Júlio Cezar Reis Paes do Senac São Raimundo Nonato. Local: Laboratório. Observação: Precisa de dormitório.',
-      instructor: 'Júlio Cezar Reis Paes - Senac São Raimundo Nonato'
+      description: 'Os alunos aprenderão a usar uma API de WhatsApp para realizar envios de mensagens automáticas, geradas por IA, com prompts adaptados para seguir as diretrizes do IFPI, com o objetivo de apoiar e confortar os alunos, além de incentivar o uso do setor de saúde do IFPI Campus Floriano. Local: Laboratório.',
+      instructor: 'Júlio Cezar Reis Paes'
     },
     'modal-11': {
       title: 'Mini Curso 3',
