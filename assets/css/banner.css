@@ -48,10 +48,6 @@
   .banner-container {
     padding: 0;
   }
-
-  .banner-image {
-    /* removido max-height para não “apertar” no mobile */
-  }
 }
 
 @media (max-width: 480px) {
@@ -63,9 +59,6 @@
     padding: 0;
   }
 
-  .banner-image {
-    /* sem max-height */
-  }
 }
 
 /* ===== TIMER COLADO AO BANNER ===== */
