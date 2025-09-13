@@ -6,10 +6,22 @@ body {
 }
 
 .main {
-  margin-top: 90px; /* Account for fixed header */
-  padding-left: 4px;
-  padding-right: 4px;
+  margin-top: 88px; /* Account for reduced header and timer positioning */
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 95px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin-top: 85px;
+  }
 }
 
 .footer {

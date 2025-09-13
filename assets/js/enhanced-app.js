@@ -228,6 +228,7 @@
       const currentScroll = window.pageYOffset;
 
       this.updateHeaderOnScroll(currentScroll);
+      this.updateTimerOnScroll(currentScroll);
       this.updateBackToTop(currentScroll);
       this.handleScrollAnimations();
 
@@ -237,6 +238,8 @@
     handleResize() {
       this.updateMobileMenu();
       this.initScrollAnimations();
+      // Recheck timer state on resize
+      this.updateTimerOnScroll(window.pageYOffset);
     }
 
     updateHeaderOnScroll(scrollPosition) {
@@ -247,6 +250,30 @@
         header.classList.add("scrolled");
       } else {
         header.classList.remove("scrolled");
+      }
+    }
+
+    updateTimerOnScroll(scrollPosition) {
+      const timerSection = document.querySelector(".timer-section");
+      if (!timerSection) return;
+
+      // Detecta se é mobile (tablet pequeno incluído)
+      const isMobile = window.innerWidth <= 768;
+      
+      if (isMobile) {
+        // No mobile/tablet, torna compacto após 150px de scroll
+        if (scrollPosition > 150) {
+          timerSection.classList.add("compact");
+        } else {
+          timerSection.classList.remove("compact");
+        }
+      } else {
+        // No desktop, aplica versão "light" do compacto após 100px
+        if (scrollPosition > 100) {
+          timerSection.classList.add("compact");
+        } else {
+          timerSection.classList.remove("compact");
+        }
       }
     }
 
@@ -696,7 +723,7 @@
   const timer = document.querySelector('.timer-section');
   if (!timer) return;
 
-  const SHRINK_AT = 300; // ajuste o ponto de encolher conforme necessário
+  const SHRINK_AT = 150; // ajuste o ponto de encolher conforme necessário
 
   const onScroll = () => {
     if (window.scrollY > SHRINK_AT) {

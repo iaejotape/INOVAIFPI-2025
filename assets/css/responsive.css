@@ -21,7 +21,7 @@
 
   /* Header */
   .header {
-    top: 2px;
+    top: 15px;
     left: 2px;
     right: 2px;
   }
@@ -74,7 +74,7 @@
 
   /* Main */
   .main {
-    margin-top: 75px;
+    margin-top: 54px;
     padding-left: 2px;
     padding-right: 2px;
   }
@@ -83,7 +83,7 @@
 
   /* Hero Section */
   .hero {
-    margin: var(--spacing-16) var(--spacing-1) var(--spacing-12);
+    margin: 0;
   }
 
   .hero-content {
@@ -121,36 +121,38 @@
 
   /* Timer Section */
   .timer-section {
-    top: 60px;
-    padding: var(--spacing-6) 0;
-    margin: var(--spacing-12) var(--spacing-1);
+    top: 52px;
+    padding: var(--spacing-2) 0;
+    margin: 0;
   }
 
   .timer-content {
-    gap: var(--spacing-4);
+    gap: var(--spacing-2);
+    padding: var(--spacing-4) 0;
   }
 
   .timer-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-sm);
   }
 
   .countdown {
-    gap: var(--spacing-2);
+    gap: 4px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .countdown-item {
-    min-width: 60px;
-    padding: var(--spacing-3);
+    min-width: 45px;
+    padding: 6px;
+    border-radius: 12px;
   }
 
   .countdown-number {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
 
   .countdown-label {
-    font-size: var(--font-size-xs);
+    font-size: 9px;
   }
 
   .countdown-separator {
@@ -253,6 +255,12 @@
 
   .speaker-image {
     height: 280px;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    letter-spacing: 0.3px;
   }
 
   /* Minicourses Section */
@@ -866,7 +874,7 @@
   }
 
   .countdown-number {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
   }
 
   .activity-card {
@@ -876,6 +884,37 @@
   .day-indicator {
     width: 40px;
     height: 40px;
+  }
+
+  /* Compact timer for very small screens */
+  .timer-section.compact {
+    padding: var(--spacing-1) 0;
+  }
+
+  .timer-section.compact .timer-content {
+    gap: var(--spacing-1);
+  }
+
+  .timer-section.compact .timer-title {
+    font-size: var(--font-size-xs);
+  }
+
+  .timer-section.compact .countdown {
+    gap: 2px;
+  }
+
+  .timer-section.compact .countdown-item {
+    width: 40px;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .timer-section.compact .countdown-number {
+    font-size: var(--font-size-lg);
+  }
+
+  .timer-section.compact .countdown-label {
+    font-size: 8px;
   }
 }
 
