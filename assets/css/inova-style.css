@@ -800,17 +800,17 @@ body.nav-open {
       padding: 2px 6px;
       border-radius: 20px;
     }
-    
+
     /* Reduzir tamanho dos botões em about-actions */
     .about-actions .btn-lg {
       padding: var(--spacing-3) var(--spacing-6);
       font-size: var(--font-size-base);
     }
-    
+
     .about-actions .btn span {
       font-size: var(--font-size-sm);
     }
-    
+
     .about-actions .btn i {
       font-size: var(--font-size-sm);
     }
@@ -818,7 +818,7 @@ body.nav-open {
 
   /* SMALL MOBILE (320px and below) */
   @media (max-width: 320px) {
-        .countdown-number-inova {
+    .countdown-number-inova {
       font-size: 18px;
     }
 
