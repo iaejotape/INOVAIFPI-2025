@@ -793,23 +793,39 @@ body.nav-open {
     }
   }
 
+  @media (max-width: 420px) {
+    .countdown-item-inova {
+      min-width: 40px;
+      padding: 2px 6px;
+      border-radius: 20px;
+    }
+  }
+
   /* SMALL MOBILE (320px and below) */
   @media (max-width: 320px) {
+        .countdown-number-inova {
+      font-size: 18px;
+    }
+
+    .countdown-label-inova {
+      font-size: 9px;
+    }
     .hero-title-inova {
       font-size: 32px;
     }
 
     .countdown-item-inova {
-      min-width: 65px;
-      padding: 10px 14px;
+      min-width: 40px;
+      padding: 2px 6px;
+      border-radius: 20px;
     }
 
     .countdown-number-inova {
-      font-size: 24px;
+      font-size: 17px;
     }
 
     .countdown-label-inova {
-      font-size: 11px;
+      font-size: 9px;
     }
 
     .cta-button-inova {
