@@ -25,7 +25,7 @@
       property="og:description"
       content="Evento de inovação e tecnologia do IFPI Campus Floriano com palestras, minicursos e networking."
     />
-    <meta property="og:image" content="assets/images/Logo-Inova.png" />
+    <meta property="og:image" content="assets/images/Logo.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -55,7 +55,7 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
       rel="stylesheet"
     />
 
@@ -75,54 +75,31 @@
     <link rel="stylesheet" href="assets/css/animations.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/inova-style.css" />
   </head>
   <body>
     <!-- Header -->
-    <!-- Header -->
-    <header class="header" id="header" role="banner">
-      <nav class="navbar" role="navigation" aria-label="Navegação principal">
-        <div class="nav-container">
-          <div class="nav-logo">
+    <header class="header-inova" id="header" role="banner">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-inova">
             <img
               src="assets/images/Logo-Inova.png"
               alt="Logo INOVA IFPI 2025"
-              class="logo"
+              class="logo-img"
             />
           </div>
-
-          <ul class="nav-menu" id="nav-menu" role="menubar">
-            <li class="nav-item" role="none">
-              <a href="#inicio" class="nav-link active" role="menuitem"
-                >INÍCIO</a
-              >
-            </li>
-            <li class="nav-item" role="none">
-              <a href="#programacao" class="nav-link" role="menuitem"
-                >PROGRAMAÇÃO</a
-              >
-            </li>
-            <li class="nav-item" role="none">
-              <a href="#palestrantes" class="nav-link" role="menuitem"
-                >PALESTRANTES</a
-              >
-            </li>
-            <li class="nav-item" role="none">
-              <a href="#minicursos" class="nav-link" role="menuitem"
-                >MINICURSOS</a
-              >
-            </li>
-            <li class="nav-item" role="none">
-              <a href="#parcerias" class="nav-link" role="menuitem"
-                >PARCERIAS</a
-              >
-            </li>
-            <li class="nav-item" role="none">
-              <a href="#duvidas" class="nav-link" role="menuitem">DÚVIDAS</a>
-            </li>
-          </ul>
-
+          <nav class="nav-inova" role="navigation" aria-label="Navegação principal">
+            <a href="#inicio" class="nav-link-inova active" role="menuitem">INÍCIO</a>
+            <a href="#programacao" class="nav-link-inova" role="menuitem">PROGRAMAÇÃO</a>
+            <a href="#palestrantes" class="nav-link-inova" role="menuitem">PALESTRANTES</a>
+            <a href="#minicursos" class="nav-link-inova" role="menuitem">MINICURSOS</a>
+            <a href="#parcerias" class="nav-link-inova" role="menuitem">PARCERIAS</a>
+            <a href="#duvidas" class="nav-link-inova" role="menuitem">DÚVIDAS</a>
+            <a href="https://suap.ifpi.edu.br/eventos/inscricao/1480/" class="nav-link-inova nav-link-highlight" target="_blank" rel="noopener">INSCRIÇÃO</a>
+          </nav>
           <button
-            class="nav-toggle"
+            class="nav-toggle-inova"
             id="nav-toggle"
             aria-label="Abrir menu de navegação"
             aria-expanded="false"
@@ -132,134 +109,156 @@
             <span class="bar" aria-hidden="true"></span>
           </button>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main" role="main">
-      <!-- Banner Section -->
-      <section class="banner-section" aria-labelledby="banner-title">
-        <div class="banner-container">
-          <img
-            src="assets/images/bannerjp.gif"
-            alt="Banner INOVA IFPI 2025 - Inovação e propriedade intelectual. O seu evento começa agora! 07 a 09 de Outubro | IFPI Campus Floriano"
-            class="banner-image"
-          />
-        </div>
-      </section>
+    <!-- Main Hero Section -->
+    <main class="hero-inova" role="main" id="inicio">
+      <div class="container">
+        <div class="hero-inova-content">
+          <!-- Left Content -->
+          <div class="hero-left">
+            <div class="hero-date">07 - 09 OUT, 2025</div>
+            <h1 class="hero-title-inova">INOVA 2025</h1>
+            <p class="hero-subtitle-inova">Semana da Propriedade Intelectual e Inovação</p>
+            
+            <div class="hero-location">
+              <p>IFPI Campus Floriano</p>
+              <p>R. Francisco Urquiza Machado, 462</p>
+            </div>
 
-      <!-- Timer Section -->
-      <section
-        class="timer-section sticky-section"
-        aria-labelledby="timer-title"
-      >
-        <div class="container">
-          <div class="timer-content">
-            <h2 id="timer-title" class="timer-title">O EVENTO COMEÇA EM:</h2>
-            <div class="countdown" role="timer" aria-live="polite">
-              <div class="countdown-item">
-                <div class="countdown-number" id="days">00</div>
-                <div class="countdown-label">Dias</div>
+            <!-- Countdown Timer -->
+            <div class="countdown-inova" role="timer" aria-live="polite">
+              <div class="countdown-item-inova">
+                <div class="countdown-number-inova" id="days">00</div>
+                <div class="countdown-label-inova">DIAS</div>
               </div>
-              <div class="countdown-separator">:</div>
-              <div class="countdown-item">
-                <div class="countdown-number" id="hours">00</div>
-                <div class="countdown-label">Horas</div>
+              <div class="countdown-item-inova">
+                <div class="countdown-number-inova" id="hours">00</div>
+                <div class="countdown-label-inova">HRS</div>
               </div>
-              <div class="countdown-separator">:</div>
-              <div class="countdown-item">
-                <div class="countdown-number" id="minutes">00</div>
-                <div class="countdown-label">Minutos</div>
+              <div class="countdown-item-inova">
+                <div class="countdown-number-inova" id="minutes">00</div>
+                <div class="countdown-label-inova">MINS</div>
               </div>
-              <div class="countdown-separator">:</div>
-              <div class="countdown-item">
-                <div class="countdown-number" id="seconds">00</div>
-                <div class="countdown-label">Segundos</div>
+              <div class="countdown-item-inova">
+                <div class="countdown-number-inova" id="seconds">00</div>
+                <div class="countdown-label-inova">SECS</div>
               </div>
             </div>
-            <a
-              href="https://suap.ifpi.edu.br/eventos/inscricao/1480/"
-              class="btn btn-accent btn-lg pulse-animation"
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fas fa-rocket" aria-hidden="true"></i>
-              <span>QUERO ME INSCREVER!</span>
+
+            <!-- CTA Button -->
+            <a href="https://suap.ifpi.edu.br/eventos/inscricao/1480/" 
+               class="cta-button-inova" 
+               target="_blank" 
+               rel="noopener">
+              FAZER INSCRIÇÃO
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3.33334 8H12.6667M12.6667 8L8.00001 3.33333M12.6667 8L8.00001 12.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
           </div>
-        </div>
-      </section>
 
-      <!-- Hero Section -->
-      <section
-        id="inicio"
-        class="hero section-padding"
-        aria-labelledby="hero-title"
-      >
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text scroll-reveal" data-delay="100">
-              <span class="hero-badge">SOBRE NÓS</span>
-              <h1 id="hero-title" class="hero-title">
-                CONHEÇA O
-                <span class="gradient-text">EVENTO</span>
-              </h1>
-              <div class="hero-divider"></div>
-              <p class="hero-description">
-                A Semana da Propriedade Intelectual e Inovação é um evento
-                originado no IFPI - Campus Floriano e idealizado com base nas
-                temáticas de Propriedade Intelectual e Transferência de
-                Tecnologia para a Inovação. Busca-se democratizar o acesso a
-                novos conhecimentos, bem como destacar a importância de
-                experiências entre estudantes e professores de instituições de
-                ensino regionais, as quais ofertam os mais diversos cursos. A
-                interdisciplinaridade é o tema central do evento e seu objetivo
-                principal inclui a integração das diferentes áreas do
-                conhecimento.
-              </p>
-              <div class="hero-actions">
-                <a
-                  href="https://suap.ifpi.edu.br/eventos/inscricao/1480/"
-                  class="btn btn-primary btn-lg"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <span>INSCREVA-SE AGORA</span>
-                  <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                </a>
-                <button
-                  class="btn btn-secondary btn-lg"
-                  onclick="scrollToSection('programacao')"
-                >
-                  <span>VER PROGRAMAÇÃO</span>
-                  <i class="fas fa-calendar" aria-hidden="true"></i>
-                </button>
-              </div>
+          <!-- Right Content - logo inova -->
+          <div class="hero-right">
+            <div class="mapa-floriano">
+              <img
+                src="assets/images/floriano-mapa.png"
+                alt="Mapa de Floriano"
+              />
             </div>
-            <div class="hero-media scroll-reveal" data-delay="200">
-              <div class="video-container">
-                <div class="video-overlay">
-                  <button
-                    class="play-button"
-                    aria-label="Reproduzir vídeo de apresentação"
-                  >
-                    <i class="fas fa-play" aria-hidden="true"></i>
-                  </button>
-                </div>
-                <iframe
-                  src="https://www.youtube.com/embed/2RZuuWTiktw?si=5oZVydClofYvxtyJ"
-                  title="Vídeo de apresentação do INOVA IFPI 2025"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                  loading="lazy"
-                >
-                </iframe>
-              </div>
+            <div class="efeito-tech">
+              <img
+                src="assets/images/efeitos-tech.png"
+                alt="Efeitos tecnologia"
+                class="efeito-tech"
+              />
             </div>
           </div>
         </div>
-      </section>
+
+        <!-- About Section Moved Here -->
+        <div class="about-section-inova">
+          <div class="about-content">
+            <span class="about-badge">SOBRE NÓS</span>
+            <h2 class="about-title">
+              CONHEÇA O EVENTO
+            </h2>
+            <div class="about-divider"></div>
+            <p class="about-description">
+              A Semana da Propriedade Intelectual e Inovação é um evento
+              originado no IFPI - Campus Floriano e idealizado com base nas
+              temáticas de Propriedade Intelectual e Transferência de
+              Tecnologia para a Inovação. Busca-se democratizar o acesso a
+              novos conhecimentos, bem como destacar a importância de
+              experiências entre estudantes e professores de instituições de
+              ensino regionais, as quais ofertam os mais diversos cursos. A
+              interdisciplinaridade é o tema central do evento e seu objetivo
+              principal inclui a integração das diferentes áreas do
+              conhecimento.
+            </p>
+            <div class="about-actions">
+              <a
+                href="https://suap.ifpi.edu.br/eventos/inscricao/1480/"
+                class="btn btn-primary btn-lg"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>INSCREVA-SE AGORA</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <button
+                class="btn btn-secondary btn-lg"
+                onclick="scrollToSection('programacao')"
+              >
+                <span>VER PROGRAMAÇÃO</span>
+                <i class="fas fa-calendar" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="about-media">
+            <div class="video-container">
+              <div class="video-overlay">
+                <button
+                  class="play-button"
+                  aria-label="Reproduzir vídeo de apresentação"
+                >
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+              <iframe
+                src="https://www.youtube.com/embed/2RZuuWTiktw?si=5oZVydClofYvxtyJ"
+                title="Vídeo de apresentação do INOVA IFPI 2025"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Sidebar -->
+      <div class="social-sidebar-inova">
+        <div class="social-text-inova">Siga-nos</div>
+        <div class="social-links-inova">
+          <a href="#" class="social-link-inova">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-link-inova">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link-inova">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="social-link-inova">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </main>
 
       <!-- Programming Section -->
       <section
@@ -906,8 +905,8 @@
             <article class="speaker-card scroll-reveal" data-delay="400">
               <div class="speaker-image">
                 <img
-                  src="assets/images/cristinna.jpeg"
-                  alt="Cristinna Garibalde da Fonseca Rocha Barbosa"
+                  src="assets/images/felipe.jpg"
+                  alt="Felipe Ibiapino"
                   loading="lazy"
                 />
                 <div class="speaker-overlay">
@@ -916,7 +915,7 @@
                       href="https://www.instagram.com/cristinnagaribaldee?igsh=ZGI1MnJodXBvbzkx"
                       class="social-link"
                       target="_blank"
-                      aria-label="Instagram da Cristinna Garibalde"
+                      aria-label="Instagram do Felipe Ibiapino"
                     >
                       <i class="fab fa-instagram"></i>
                     </a>
@@ -924,8 +923,8 @@
                 </div>
               </div>
               <div class="speaker-info">
-                <h3 class="speaker-name">Cristinna Garibalde</h3>
-                <p class="speaker-role">Enfermeira graduada pela FAESF, especialista em UTI Adulto, Pediátrica e Neonatal, Enfermagem Obstétrica, Nefrologia e com formação complementar em Saúde Mental, Psicopatologia e Atenção Psicossocial.</p>
+                <h3 class="speaker-name">Felipe Ibiapino</h3>
+                <p class="speaker-role">aguardando informacoes</p>
                 <div class="speaker-tags">
                   <span class="tag">Saúde</span>
                   <span class="tag">UTI</span>
@@ -1396,8 +1395,32 @@
           <p>&copy; 2025 IFPI Campus Floriano. Todos os direitos reservados.</p>
           <p class="footer-credits">
             Desenvolvido com
-            <i class="fas fa-heart" aria-hidden="true"></i> pela equipe INOVA
+            <i class="fas fa-heart" aria-hidden="true"></i> por João Pedro Damasceno e Priscila Freitas da equipe INOVA 2025.
           </p>
+          <div class="developers-social">
+            <div class="developer-info">
+              <span class="dev-name">João Pedro</span>
+              <div class="dev-links">
+                <a href="https://instagram.com/iaejottape" target="_blank" rel="noopener" class="dev-instagram">
+                  <i class="fab fa-instagram"></i> @iaejottape
+                </a>
+                <a href="https://www.linkedin.com/in/jotape-dev-one/" target="_blank" rel="noopener" class="dev-linkedin">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="developer-info">
+              <span class="dev-name">Priscila Freitas</span>
+              <div class="dev-links">
+                <a href="https://instagram.com/fpriscila_martins" target="_blank" rel="noopener" class="dev-instagram">
+                  <i class="fab fa-instagram"></i> @fpriscila_martins
+                </a>
+                <a href="https://www.linkedin.com/in/priscila-freitas-martins-conhe%C3%A7ameutrabalho/" target="_blank" rel="noopener" class="dev-linkedin">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -1427,5 +1450,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/enhanced-app.js"></script>
+    <script src="assets/js/inova-integration.js"></script>
   </body>
 </html>

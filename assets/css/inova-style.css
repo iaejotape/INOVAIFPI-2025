@@ -1,0 +1,1016 @@
+/* ===== INOVA DESIGN STYLES ===== */
+
+/* Global Font */
+* {
+  font-family: "Unbounded", sans-serif;
+}
+
+/* Header */
+.header-inova {
+  padding: 1px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.header-inova .container {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Inova Responsiveness */
+.logo-inova .logo-img {
+  height: 120px;
+  width: auto;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.logo-inova .logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Header Responsiveness */
+@media (max-width: 768px) {
+  .logo-inova .logo-img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-inova .logo-img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-inova .logo-img {
+    height: 50px;
+  }
+}
+
+.nav-inova {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-link-inova {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-link-inova:hover {
+  color: #3b92a2;
+  transform: translateY(-2px);
+}
+
+.nav-link-inova.active {
+  color: #3b92a2;
+}
+
+.nav-link-inova::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: #3b92a2;
+  transition: width 0.3s ease;
+}
+
+.nav-link-inova:hover::after,
+.nav-link-inova.active::after {
+  width: 100%;
+}
+.nav-link-inova.active::after {
+  width: 100%;
+}
+
+.nav-link-highlight {
+  background: linear-gradient(45deg, #8b61c2, #3b92a2);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.nav-link-highlight:hover {
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 97, 194, 0.4);
+}
+
+.nav-link-highlight::after {
+  display: none;
+}
+
+.nav-toggle-inova {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-toggle-inova .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Hero Inova Section */
+.hero-inova {
+  background: linear-gradient(135deg, #4d0d9f 0%, #8b61c2 50%, #3b92a2 100%);
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  padding-top: 90px;
+}
+
+.hero-inova::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(139, 97, 194, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(59, 146, 162, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 60%,
+      rgba(77, 13, 159, 0.2) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-inova .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-inova-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 70vh;
+  padding: 60px 0;
+}
+
+.hero-left {
+  max-width: 500px;
+}
+
+.hero-date {
+  font-size: 16px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-title-inova {
+  animation: fadeInUp 1s ease-out;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 20px;
+  background: white;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-subtitle-inova {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.hero-location {
+  margin-bottom: 50px;
+}
+
+.hero-location p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+}
+
+/* Countdown Inova */
+.countdown-inova {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.countdown-item-inova {
+  border: 4px solid #ffffff;
+  border-radius: 35px;
+  padding: 15px 19px;
+  text-align: center;
+  min-width: 90px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 21, 112, 0.3);
+}
+
+.countdown-number-inova {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+  font-family: "Unbounded", monospace;
+  line-height: 1;
+}
+
+.countdown-label-inova {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* CTA Button Inova */
+.cta-button-inova {
+  background: linear-gradient(45deg, #8b61c2, #3b92a2);
+  border: none;
+  padding: 18px 36px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(139, 97, 194, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-button-inova:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(139, 97, 194, 0.5);
+  background: linear-gradient(45deg, #9d72d4, #4da3b3);
+  color: white;
+}
+
+.cta-button-inova svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button-inova:hover svg {
+  transform: translateX(5px);
+}
+
+/* Hero Right - Elementos visuais */
+.hero-right {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-right::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(139, 97, 194, 0.1) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: pulse-bg 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes pulse-bg {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.1;
+  }
+}
+
+/* Mapa Floriano */
+.mapa-floriano {
+  position: absolute;
+  z-index: 8;
+  animation: slideInRight 1s ease-out;
+}
+
+.mapa-floriano img {
+  width: 700px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Efeito Tech */
+.efeito-tech {
+  transform: scale(1.24);
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+/* Animações */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* About Section Inova */
+.about-section-inova {
+  background: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(10px);
+  border: 5px solid white;
+  border-radius: 24px;
+  margin: 80px 0;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-badge {
+  background: rgba(0, 0, 0, 0.082);
+  color: #3b92a2;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-divider {
+  width: 60px;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.about-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-media .video-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-media iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Social Sidebar Inova */
+.social-sidebar-inova {
+  position: absolute;
+  left: 30px;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-text-inova {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social-links-inova {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link-inova {
+  width: 45px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.social-link-inova:hover {
+  transform: translateX(2px);
+  color: #3b92a2;
+}
+
+/* Mobile menu toggle animation */
+.nav-toggle-inova.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle-inova.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle-inova.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile navigation styles */
+.nav-inova.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  background: rgba(77, 13, 159, 0.98);
+  backdrop-filter: blur(20px);
+  padding: 30px 20px;
+  gap: 0px;
+  z-index: 999;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Prevent body scroll when menu is open */
+body.nav-open {
+  overflow: hidden;
+}
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* LARGE TABLET (1024px and below) */
+@media (max-width: 1024px) {
+  .hero-inova-content {
+    gap: 40px;
+  }
+
+  .about-section-inova {
+    padding: 40px;
+  }
+
+  .social-sidebar-inova {
+    left: 15px;
+  }
+
+  .hero-title-inova {
+    font-size: 52px;
+  }
+
+  /* SMALL TABLET (900px and below) */
+  @media (max-width: 900px) {
+    .hero-inova-content {
+      gap: 30px;
+    }
+
+    .hero-title-inova {
+      font-size: 50px;
+    }
+
+    .mapa-floriano img {
+      width: 400px;
+    }
+
+    .efeito-tech {
+      transform: scale(1);
+    }
+
+    .countdown-inova {
+      gap: 12px;
+    }
+
+    .countdown-item-inova {
+      min-width: 80px;
+      padding: 12px 16px;
+    }
+  }
+
+  /* TABLET (768px and below) */
+  @media (max-width: 768px) {
+    .nav-inova {
+      display: none;
+    }
+
+    .nav-toggle-inova {
+      display: flex;
+    }
+
+    .hero-inova-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .hero-title-inova {
+      font-size: 48px;
+    }
+
+    .countdown-inova {
+      justify-content: center;
+    }
+
+    .about-section-inova {
+      grid-template-columns: 1fr;
+      padding: 30px;
+      margin: 40px 0;
+    }
+
+    .social-sidebar-inova {
+      display: none;
+    }
+
+    .hero-right {
+      height: 350px;
+      gap: 25px;
+    }
+
+    .mapa-floriano img {
+      width: 320px;
+    }
+
+    .efeito-tech {
+      transform: scale(0.9);
+    }
+
+    .about-actions {
+      justify-content: center;
+    }
+
+    .hero-subtitle-inova {
+      font-size: 15px;
+    }
+
+    .hero-location p {
+      font-size: 15px;
+    }
+  }
+
+  /* LARGE MOBILE (640px and below) */
+  @media (max-width: 640px) {
+    .hero-title-inova {
+      font-size: 44px;
+    }
+
+    .hero-right {
+      height: 300px;
+      gap: 20px;
+    }
+
+    .mapa-floriano img {
+      width: 280px;
+    }
+
+    .efeito-tech {
+      transform: scale(0.8);
+    }
+
+    .countdown-item-inova {
+      min-width: 75px;
+      padding: 14px 18px;
+    }
+
+    .countdown-number-inova {
+      font-size: 32px;
+    }
+
+    .about-section-inova {
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .about-title {
+      font-size: 32px;
+    }
+  }
+
+  /* MOBILE (480px and below) - Hide efeito-tech and mapa-floriano */
+  @media (max-width: 480px) {
+    .hero-title-inova {
+      font-size: 36px;
+    }
+
+    .countdown-inova {
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .countdown-item-inova {
+      min-width: 70px;
+      padding: 12px 16px;
+    }
+
+    .countdown-number-inova {
+      font-size: 28px;
+    }
+
+    .countdown-label-inova {
+      font-size: 12px;
+    }
+
+    /* HIDE MAPA-FLORIANO AND EFEITO-TECH ON MOBILE */
+    .mapa-floriano {
+      display: none;
+    }
+
+    .efeito-tech {
+      display: none;
+    }
+
+    .hero-right {
+      height: auto;
+      min-height: 100px;
+      gap: 15px;
+      padding: 20px 0;
+    }
+
+    .about-section-inova {
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .about-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-button-inova {
+      padding: 16px 32px;
+      font-size: 14px;
+    }
+
+    .hero-subtitle-inova {
+      font-size: 14px;
+    }
+
+    .hero-location p {
+      font-size: 14px;
+    }
+
+    .about-title {
+      font-size: 28px;
+    }
+
+    .about-description {
+      font-size: 15px;
+    }
+  }
+
+  /* SMALL MOBILE (320px and below) */
+  @media (max-width: 320px) {
+    .hero-title-inova {
+      font-size: 32px;
+    }
+
+    .countdown-item-inova {
+      min-width: 65px;
+      padding: 10px 14px;
+    }
+
+    .countdown-number-inova {
+      font-size: 24px;
+    }
+
+    .countdown-label-inova {
+      font-size: 11px;
+    }
+
+    .cta-button-inova {
+      padding: 14px 28px;
+      font-size: 13px;
+    }
+
+    /* ENSURE ELEMENTS STAY HIDDEN ON VERY SMALL SCREENS */
+    .mapa-floriano {
+      display: none;
+    }
+
+    .efeito-tech {
+      display: none;
+    }
+
+    .hero-right {
+      height: auto;
+      min-height: 80px;
+      gap: 10px;
+      padding: 15px 0;
+    }
+
+    .about-title {
+      font-size: 24px;
+    }
+
+    .hero-subtitle-inova {
+      font-size: 13px;
+    }
+
+    .hero-location p {
+      font-size: 13px;
+    }
+
+    .about-description {
+      font-size: 14px;
+    }
+
+    .container {
+      padding: 0 15px;
+    }
+  }
+
+  /* LANDSCAPE ORIENTATION ADJUSTMENTS */
+  @media (orientation: landscape) and (max-height: 600px) {
+    .hero-inova {
+      min-height: 100vh;
+      padding-top: 70px;
+    }
+
+    .hero-inova-content {
+      padding: 30px 0;
+      min-height: 60vh;
+    }
+
+    .hero-right {
+      height: 250px;
+    }
+
+    @media (max-width: 480px) {
+      .mapa-floriano {
+        display: none;
+      }
+
+      .efeito-tech {
+        display: none;
+      }
+    }
+  }
+
+  /* PRINT STYLES */
+  @media print {
+    .mapa-floriano,
+    .efeito-tech,
+    .social-sidebar-inova {
+      display: none !important;
+    }
+
+    .hero-inova {
+      background: white !important;
+      color: black !important;
+    }
+
+    .hero-title-inova {
+      color: black !important;
+      background: transparent !important;
+      -webkit-text-fill-color: black !important;
+    }
+  }
+
+  /* HIGH DPI DISPLAYS */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .mapa-floriano img,
+    .efeito-tech img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+  }
+
+  /* REDUCED MOTION PREFERENCES */
+  @media (prefers-reduced-motion: reduce) {
+    .mapa-floriano,
+    .efeito-tech,
+    .hero-title-inova,
+    .countdown-item-inova {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .cta-button-inova:hover {
+      transform: none !important;
+    }
+  }
+
+  /* TOUCH DEVICE OPTIMIZATIONS */
+  @media (hover: none) and (pointer: coarse) {
+    .cta-button-inova {
+      min-height: 44px;
+      padding: 16px 36px;
+    }
+
+    .nav-link-inova {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .countdown-item-inova {
+      min-height: 60px;
+    }
+  }
+
+  /* ULTRA-WIDE SCREENS */
+  @media (min-width: 1920px) {
+    .hero-inova-content {
+      gap: 100px;
+    }
+
+    .mapa-floriano img {
+      width: 800px;
+    }
+
+    .efeito-tech {
+      transform: scale(1.4);
+    }
+  }
+
+  /* ===== PERFORMANCE OPTIMIZATIONS ===== */
+  .countdown-number-inova {
+    will-change: transform;
+  }
+
+  .mapa-floriano,
+  .efeito-tech {
+    will-change: transform;
+  }
+
+  /* ===== END OF RESPONSIVE DESIGN ===== */
+
+  /* Animation for elements on scroll */
+  .countdown-item-inova {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+
+  .countdown-item-inova.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .countdown-item-inova:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .countdown-item-inova:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .countdown-item-inova:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .countdown-item-inova:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+
+  /* Ripple effect for CTA button */
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  /* Smooth body adjustments for fixed header */
+  body {
+    padding-top: 0;
+  }
+
+  /* Ensure other sections don't overlap with fixed header */
+  .programming {
+    padding-top: 120px;
+  }
+}
