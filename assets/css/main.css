@@ -526,18 +526,15 @@ a:focus {
 }
 
 /* ===== FOCUS STYLES ===== */
-*:focus {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
-}
 
+*:focus,
 button:focus,
 a:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: none;
 }
 
 /* ===== SELECTION STYLES ===== */
