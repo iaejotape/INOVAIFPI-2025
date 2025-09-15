@@ -108,21 +108,25 @@
 }
 
 .nav-link-highlight {
-  background: linear-gradient(45deg, #8b61c2, #3b92a2);
-  padding: 12px 24px;
+  color: #3b92a2;
   border-radius: 8px;
   font-weight: 600;
-  margin-left: 20px;
 }
 
 .nav-link-highlight:hover {
-  color: white !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(139, 97, 194, 0.4);
 }
 
 .nav-link-highlight::after {
-  display: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: #3b92a2;
+  transition: width 0.3s ease;
 }
 
 .nav-toggle-inova {
@@ -197,6 +201,18 @@
   max-width: 500px;
 }
 
+/* Garantir que o conteúdo do hero não quebre em telas menores */
+@media (max-width: 1024px) {
+  .hero-inova-content {
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  .hero-left {
+    max-width: 600px;
+  }
+}
+
 .hero-date {
   font-size: 16px;
   font-weight: 900;
@@ -262,7 +278,6 @@
   padding: 15px 19px;
   text-align: center;
   min-width: 90px;
-  transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(74, 21, 112, 0.3);
 }
 
@@ -273,6 +288,14 @@
   margin-bottom: 8px;
   font-family: "Unbounded", monospace;
   line-height: 1;
+  transition: none !important;
+  transform: none !important;
+}
+
+#days, #hours, #minutes, #seconds {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
 }
 
 .countdown-label-inova {
@@ -301,6 +324,8 @@
   box-shadow: 0 8px 25px rgba(139, 97, 194, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  max-width: 100%;
+  justify-content: center;
 }
 
 .cta-button-inova:hover {
@@ -312,6 +337,7 @@
 
 .cta-button-inova svg {
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .cta-button-inova:hover svg {
@@ -576,37 +602,151 @@ body.nav-open {
   overflow: hidden;
 }
 /* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1366px) {
+  .social-sidebar-inova {
+    display: none;
+  }
+}
+
+/* LARGE DESKTOP SCREENS (1367px - 1919px) */
+@media (min-width: 1367px) and (max-width: 1919px) {
+  .efeito-tech {
+    transform: scale(1.6);
+  }
+
+  .mapa-floriano img {
+    width: 750px;
+  }
+}
+
+/* DESKTOP SCREENS (1025px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .efeito-tech {
+    transform: scale(1.5);
+  }
+
+  .mapa-floriano img {
+    width: 680px;
+  }
+}
+
+/* DESKTOP TO TABLET TRANSITION (1024px to 901px) */
+@media (max-width: 1024px) and (min-width: 901px) {
+  .social-sidebar-inova {
+    display: none;
+  }
+  .hero-inova-content {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 50px;
+  }
+
+  .hero-title-inova {
+    font-size: 54px;
+  }
+
+  .mapa-floriano img {
+    width: 480px;
+  }
+
+  .efeito-tech {
+    transform: scale(1.4);
+  }
+
+  .countdown-inova {
+    gap: 16px;
+  }
+
+  .about-section-inova {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
 
 /* LARGE TABLET (1024px and below) */
 @media (max-width: 1024px) {
   .hero-inova-content {
+    grid-template-columns: 1fr;
     gap: 40px;
+    text-align: center;
+    padding: 40px 0;
   }
 
-  .about-section-inova {
-    padding: 40px;
+  .hero-left {
+    max-width: 100%;
+    order: 1;
   }
 
-  .social-sidebar-inova {
-    left: 15px;
+  .hero-right {
+    order: 2;
+    height: 450px;
+    gap: 30px;
   }
 
   .hero-title-inova {
     font-size: 52px;
   }
 
+  .mapa-floriano img {
+    width: 500px;
+  }
+
+  .efeito-tech {
+    transform: scale(1.1);
+  }
+
+  .countdown-inova {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .countdown-item-inova {
+    min-width: 85px;
+    padding: 14px 18px;
+  }
+
+  .about-section-inova {
+    padding: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .social-sidebar-inova {
+    left: 15px;
+  }
+
+  .cta-button-inova {
+    padding: 16px 34px;
+    font-size: 15px;
+  }
+
+  .hero-subtitle-inova {
+    font-size: 15px;
+  }
+
+  .hero-location p {
+    font-size: 15px;
+  }
+
   /* SMALL TABLET (900px and below) */
   @media (max-width: 900px) {
     .hero-inova-content {
-      gap: 30px;
+      gap: 35px;
+      padding: 35px 0;
     }
 
     .hero-title-inova {
-      font-size: 50px;
+      font-size: 48px;
+    }
+
+    .hero-right {
+      height: 380px;
+      gap: 25px;
     }
 
     .mapa-floriano img {
-      width: 400px;
+      width: 420px;
     }
 
     .efeito-tech {
@@ -621,6 +761,27 @@ body.nav-open {
       min-width: 80px;
       padding: 12px 16px;
     }
+
+    .countdown-number-inova {
+      font-size: 32px;
+    }
+
+    .about-section-inova {
+      padding: 35px;
+      margin: 60px 0;
+    }
+
+    .about-title {
+      font-size: 32px;
+    }
+
+    .hero-subtitle-inova {
+      font-size: 14px;
+    }
+
+    .hero-location p {
+      font-size: 14px;
+    }
   }
 
   /* TABLET (768px and below) */
@@ -633,19 +794,43 @@ body.nav-open {
       display: flex;
     }
 
+    .hero-inova {
+      padding-top: 80px;
+    }
+
     .hero-inova-content {
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 30px;
       text-align: center;
-      padding: 40px 0;
+      padding: 30px 0;
+    }
+
+    .hero-left {
+      order: 1;
+    }
+
+    .hero-right {
+      order: 2;
+      height: 320px;
+      gap: 20px;
     }
 
     .hero-title-inova {
-      font-size: 48px;
+      font-size: 44px;
     }
 
     .countdown-inova {
       justify-content: center;
+      gap: 10px;
+    }
+
+    .countdown-item-inova {
+      min-width: 75px;
+      padding: 12px 15px;
+    }
+
+    .countdown-number-inova {
+      font-size: 30px;
     }
 
     .about-section-inova {
@@ -658,13 +843,8 @@ body.nav-open {
       display: none;
     }
 
-    .hero-right {
-      height: 350px;
-      gap: 25px;
-    }
-
     .mapa-floriano img {
-      width: 320px;
+      width: 350px;
     }
 
     .efeito-tech {
@@ -673,30 +853,54 @@ body.nav-open {
 
     .about-actions {
       justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .cta-button-inova {
+      padding: 15px 30px;
+      font-size: 14px;
     }
 
     .hero-subtitle-inova {
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .hero-location p {
+      font-size: 14px;
+    }
+
+    .about-title {
+      font-size: 30px;
+    }
+
+    .about-description {
       font-size: 15px;
     }
   }
 
   /* LARGE MOBILE (640px and below) */
   @media (max-width: 640px) {
+    .hero-inova {
+      padding-top: 75px;
+    }
+
+    .hero-inova-content {
+      gap: 25px;
+      padding: 25px 0;
+    }
+
     .hero-title-inova {
-      font-size: 44px;
+      font-size: 40px;
     }
 
     .hero-right {
-      height: 300px;
-      gap: 20px;
+      height: 280px;
+      gap: 18px;
     }
 
     .mapa-floriano img {
-      width: 280px;
+      width: 300px;
     }
 
     .efeito-tech {
@@ -704,38 +908,8 @@ body.nav-open {
     }
 
     .countdown-item-inova {
-      min-width: 75px;
-      padding: 14px 18px;
-    }
-
-    .countdown-number-inova {
-      font-size: 32px;
-    }
-
-    .about-section-inova {
-      padding: 25px;
-      margin: 30px 0;
-    }
-
-    .about-title {
-      font-size: 32px;
-    }
-  }
-
-  /* MOBILE (480px and below) - Hide efeito-tech and mapa-floriano */
-  @media (max-width: 480px) {
-    .hero-title-inova {
-      font-size: 36px;
-    }
-
-    .countdown-inova {
-      gap: 12px;
-      justify-content: center;
-    }
-
-    .countdown-item-inova {
       min-width: 70px;
-      padding: 12px 16px;
+      padding: 10px 14px;
     }
 
     .countdown-number-inova {
@@ -744,6 +918,78 @@ body.nav-open {
 
     .countdown-label-inova {
       font-size: 12px;
+    }
+
+    .about-section-inova {
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .about-title {
+      font-size: 28px;
+    }
+
+    .about-description {
+      font-size: 14px;
+    }
+
+    .cta-button-inova {
+      padding: 14px 28px;
+      font-size: 14px;
+    }
+
+    .hero-subtitle-inova {
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .hero-location p {
+      font-size: 13px;
+    }
+
+    .hero-date {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  /* MOBILE (480px and below) - Hide efeito-tech and mapa-floriano */
+  @media (max-width: 480px) {
+    .hero-inova {
+      padding-top: 70px;
+    }
+
+    .hero-inova-content {
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .hero-title-inova {
+      font-size: 34px;
+      line-height: 1.1;
+    }
+
+    .countdown-inova {
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .countdown-item-inova {
+      min-width: 65px;
+      padding: 13px 17px;
+      border-radius: 30px;
+    }
+
+    .countdown-number-inova {
+      font-size: 24px;
+    }
+
+    .countdown-label-inova {
+      font-size: 11px;
     }
 
     /* HIDE MAPA-FLORIANO AND EFEITO-TECH ON MOBILE */
@@ -757,9 +1003,9 @@ body.nav-open {
 
     .hero-right {
       height: auto;
-      min-height: 100px;
+      min-height: 80px;
       gap: 15px;
-      padding: 20px 0;
+      padding: 15px 0;
     }
 
     .about-section-inova {
@@ -770,27 +1016,47 @@ body.nav-open {
     .about-actions {
       flex-direction: column;
       align-items: center;
+      gap: 12px;
     }
 
     .cta-button-inova {
-      padding: 16px 32px;
-      font-size: 14px;
+      padding: 14px 30px;
+      font-size: 13px;
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
     }
 
     .hero-subtitle-inova {
-      font-size: 14px;
+      font-size: 13px;
+      margin-bottom: 25px;
+      line-height: 1.4;
     }
 
     .hero-location p {
-      font-size: 14px;
+      font-size: 13px;
+    }
+
+    .hero-date {
+      font-size: 13px;
+      margin-bottom: 12px;
     }
 
     .about-title {
-      font-size: 28px;
+      font-size: 26px;
     }
 
     .about-description {
-      font-size: 15px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .hero-location {
+      margin-bottom: 35px;
     }
   }
 
@@ -986,7 +1252,18 @@ body.nav-open {
     }
 
     .efeito-tech {
-      transform: scale(1.4);
+      transform: scale(1.8);
+    }
+  }
+
+  /* VERY LARGE SCREENS (2560px+) */
+  @media (min-width: 2560px) {
+    .efeito-tech {
+      transform: scale(2.2);
+    }
+
+    .mapa-floriano img {
+      width: 1000px;
     }
   }
 

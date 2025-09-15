@@ -190,7 +190,7 @@
       this.handleLoading();
 
       this.isLoaded = true;
-      console.log("Inova 2025 - Site melhorado carregado com sucesso! 🚀");
+      console.log("Inova 2025 - Site carregado com sucesso! 🚀");
     }
 
     bindEvents() {

@@ -38,11 +38,7 @@
 
   function updateCountdownElement(element, newValue) {
     if (element && element.textContent !== newValue.toString()) {
-      element.style.transform = 'scale(1.1)';
       element.textContent = newValue;
-      setTimeout(() => {
-        element.style.transform = 'scale(1)';
-      }, 200);
     }
   }
 
