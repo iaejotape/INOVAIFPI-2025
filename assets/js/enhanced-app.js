@@ -166,9 +166,9 @@
 
   // Day information
   const dayInfo = {
-    24: { name: 'SEGUNDA-FEIRA', date: '07 DE OUTUBRO' },
-    25: { name: 'TERÇA-FEIRA', date: '08 DE OUTUBRO' },
-    26: { name: 'QUARTA-FEIRA', date: '09 DE OUTUBRO' }
+    24: { name: 'TERÇA-FEIRA', date: '07 DE OUTUBRO' },
+    25: { name: 'QUARTA-FEIRA', date: '08 DE OUTUBRO' },
+    26: { name: 'QUINTA-FEIRA', date: '09 DE OUTUBRO' }
   };
 
   // Main Application Class
