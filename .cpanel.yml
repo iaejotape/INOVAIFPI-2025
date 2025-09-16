@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/inova188/public_html
+    - export DEPLOYPATH=/home1/inovai88/public_html
     - /bin/cp -R * $DEPLOYPATH
