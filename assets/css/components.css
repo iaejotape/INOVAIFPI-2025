@@ -558,7 +558,7 @@
 .partners-track {
   display: flex;
   gap: var(--spacing-8);
-  animation: scroll-horizontal 10s linear infinite;
+  animation: scroll-horizontal 30s linear infinite;
 }
 
 .partner-logo {

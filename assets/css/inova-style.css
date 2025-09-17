@@ -605,9 +605,32 @@
   }
 }
 
-/* Prevent body scroll when menu is open */
+@media (max-width: 1600px) {
+  .social-sidebar-inova {
+  left: 0px;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  }
+.efeito-tech {
+  width: 80%;
+  height: auto;
+  max-width: 100%;
+}
+}
+
 body.nav-open {
   overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .efeito-tech {
+    display: none;
+}
 }
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1366px) {
