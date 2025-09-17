@@ -99,7 +99,7 @@
     'modal-3': {
       title: 'Oficina 1',
       date: '08 de Outubro - 08:00 às 10:00',
-      description: 'Oficina ministrada pela enfermeira do CAPS com foco em saúde mental e bem-estar. Local: Auditório do IFPI.',
+      description: 'Oficina ministrada pela enfermeira do CAPS Maria Bianca Pereira Freitas com tema: Uso de Ferramentas Digitais na Otimização da Produção de Artigos e Trabalhos Académicos. Local: Auditório do IFPI.',
       instructor: 'Bianca - Enfermeira do Caps'
     },
     'modal-4': {
@@ -115,10 +115,10 @@
       instructor: 'Ivan Rodrigues - IFPI São Raimundo'
     },
     'modal-6': {
-      title: 'Mini Curso 4 - Microcontroladores',
+      title: 'Mini Curso 4 - Primeiros Passos em Sistemas Embarcados com Raspberry Pi',
       date: '08 de Outubro - 08:00 às 12:00',
-      description: 'Minicurso sobre microcontroladores ministrado pelos alunos do EbarcaTech do IFPI - Floriano. Observação: Precisa de Laboratório.',
-      instructor: 'Alunos do EbarcaTech - IFPI Floriano'
+      description: 'Aprenda os conceitos fundamentais de sistemas embarcados e dê seus primeiros passos no desenvolvimento de projetos práticos utilizando a placa BitDogLab, baseada no Raspberry Pi. Neste minicurso, você entenderá o que são sistemas embarcados, onde eles estão presentes no nosso dia a dia e como programar uma aplicação básica que integra sensores e atuadores. Uma oportunidade prática para iniciar no universo da programação embarcada de forma simples e didática!',
+      instructor: 'Vinicius, Samuel e Deilson - IFPI Floriano'
     },
     'modal-7': {
       title: 'Oficina - A Revolução Tecnológica do Bem Estar',
@@ -145,9 +145,9 @@
       instructor: 'Júlio Cezar Reis Paes'
     },
     'modal-11': {
-      title: 'Mini Curso 3',
+      title: 'Mini Curso: Pensando como um invasor',
       date: '09 de Outubro - 09:00 às 12:00',
-      description: 'Minicurso ministrado por Keoma Souza, João Pedro Mendes e Vitória Rafaela da ETIPI. Local: Laboratório. Observação: Precisa de Dormitório (2 Homens e 1 Mulher).',
+      description: 'Minicurso ministrado por Keoma Souza, João Pedro Mendes e Vitória Rafaela da ETIPI. Local: Laboratório.',
       instructor: 'Keoma Souza, João Pedro Mendes e Vitória Rafaela - ETIPI'
     },
     'modal-12': {
