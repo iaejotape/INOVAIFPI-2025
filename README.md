@@ -6,7 +6,7 @@ O site foi desenvolvido para ser interativo, responsivo e de fácil navegação,
 
 ---
 
-## ✨ Funcionalidades do site
+## Funcionalidades do site
 
 Layout moderno e responsivo, compatível com desktops, tablets e smartphones
 
@@ -20,28 +20,20 @@ Seção de inscrição e contato para participantes
 
 Estilo visual consistente e atraente, facilitando a experiência do usuário
 
-Tecnologias utilizadas
+## Tecnologias utilizadas
 
 HTML5, CSS3 e JavaScript para a estrutura, estilos e interatividade
-
-Framework CSS Bulma para design responsivo e componentes modernos
-
----
 
 ## Sobre o evento
 
 O INOVA IFPI 2025 terá como tema “Inovações na Área de Saúde”, promovendo a inovação tecnológica e a propriedade intelectual. O evento reúne docentes, discentes e profissionais da região, incentivando pesquisa, desenvolvimento e transferência de tecnologia.
-
----
 
 ## Acesso
 
 O site pode ser acessado aqui
  (link do site ao vivo, se disponível).
 
----
-
- ## 📄 Licença  
+ ## Licença  
 
 Este projeto é **proprietário**.  
 📌 Todos os direitos reservados.  
