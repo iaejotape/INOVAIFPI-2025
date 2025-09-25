@@ -93,8 +93,8 @@
     'modal-2': {
       title: 'Palestra de Abertura',
       date: '07 de Outubro - 19:00 às 21:30',
-      description: 'Nesta mesa redonda, conduzida pelo palestrante do Sebrae e pelo Prof. Me. Felipe Ibiapino, com a participação de Thais Trajano, será debatido como as inovações no ecossistema de saúde estão diretamente ligadas ao desenvolvimento e à proteção de propriedades intelectuais. A discussão destacará a importância estratégica da propriedade intelectual como fator-chave para garantir competitividade, sustentabilidade e segurança no setor, estimulando a inovação e fortalecendo o ambiente de negócios na área da saúde.',
-      instructor: 'Mesa Redonda - Cais Valley'
+      description: 'Este talk show reunirá especialistas como o Prof. Mba. Ricardo Gomes de Queiroz (Sebrae), Prof. Me. Rogério da Silva Batista (IFPI – Teresina), Me. Thais Trajano (Cais Valley) e Prof. Me. Felipe Ibiapino para uma conversa dinâmica sobre as inovações no ecossistema de saúde. O debate abordará como o desenvolvimento e a proteção de propriedades intelectuais se tornam fatores-chave para impulsionar a inovação, garantir competitividade e fortalecer a sustentabilidade do setor, trazendo diferentes perspectivas acadêmicas e de mercado. Local: Auditório do IFPI.',
+      instructor: 'Prof Dr. Robson Freitas ( IFPI - FLO)'
     },
     'modal-3': {
       title: 'Oficina 1',
@@ -138,12 +138,12 @@
       description: 'Palestra sobre criação e desenvolvimento utilizando Inteligência Artificial. Palestrante a definir do SEBRAE. Local: Auditório do IFPI.',
       instructor: 'A Definir - SEBRAE'
     },
-    // 'modal-10': {
-    //   title: 'Minicurso: Desenvolvendo um Psicólogo Online com JavaScript',
-    //   date: '09 de Outubro - 08:00 às 12:00',
-    //   description: 'Os alunos aprenderão a usar uma API de WhatsApp para realizar envios de mensagens automáticas, geradas por IA, com prompts adaptados para seguir as diretrizes do IFPI, com o objetivo de apoiar e confortar os alunos, além de incentivar o uso do setor de saúde do IFPI Campus Floriano. Local: Laboratório.',
-    //   instructor: 'Júlio Cezar Reis Paes'
-    // },
+    'modal-10': {
+      title: 'IA na Saúde: Transformando sua pesquisa em uma startup.',
+      date: '09 de Outubro - 19:00 às 20:00',
+      description: 'Esta palestra explora como a Inteligência Artificial está revolucionando o setor da saúde e abrindo caminho para a criação de startups inovadoras. Serão discutidos os passos necessários para transformar pesquisas acadêmicas em soluções de impacto no mercado, destacando desafios, oportunidades e estratégias para empreender com base em tecnologia e inovação em saúde. Local: Auditório do IFPI.',
+      instructor: 'Prof. Dr.  Otílio Paulo da Silva Neto (IFPI- THE)'
+    },
     'modal-11': {
       title: 'Mini Curso: Pensando como um invasor',
       date: '09 de Outubro - 09:00 às 12:00',
@@ -151,7 +151,7 @@
       instructor: 'Keoma Souza, João Pedro Mendes e Vitória Rafaela - ETIPI'
     },
     'modal-12': {
-      title: 'Piauí Saúde Digital: Rumo à Fila Zero',
+      title: 'Piauí Saúde Digital: Rumo à Fila Zero - Como tecnologia e gestão estão redesenhando o acesso ao SUS',
       date: '09 de Outubro - 15:00 às 17:00',
       description: 'Como tecnologia e gestão estão redesenhando o acesso ao SUS. Palestra sobre inovações tecnológicas aplicadas à saúde pública no Piauí. Local: Auditório do IFPI.',
       instructor: 'Rodrigo e Silva Souza - ETIPI'
