@@ -84,47 +84,55 @@
 
   // Modal data for activities
   const modalData = {
-    'modal-1': {
-      title: 'Palestra e Oficina',
-      date: '07 de Outubro - 08:00 às 10:00',
-      description: 'Palestra sobre Saúde Mental e Física no Mundo Digital seguida de oficina prática com técnicas de respiração e micro exercícios para liberar estresse. Local: Auditório.',
-      instructor: 'Luna Rhara Martins Moura'
+    "modal-1": {
+      title: "Palestra e Oficina",
+      date: "07 de Outubro - 08:00 às 10:00",
+      description:
+        "Palestra sobre Saúde Mental e Física no Mundo Digital seguida de oficina prática com técnicas de respiração e micro exercícios para liberar estresse. Local: Auditório.",
+      instructor: "Luna Rhara Martins Moura",
     },
-    'modal-2': {
-      title: 'Palestra de Abertura',
-      date: '07 de Outubro - 19:00 às 21:30',
-      description: 'Este talk show reunirá especialistas como o Prof. Mba. Ricardo Gomes de Queiroz (Sebrae), Prof. Me. Rogério da Silva Batista (IFPI – Teresina), Me. Thais Trajano (Cais Valley) e Prof. Me. Felipe Ibiapino para uma conversa dinâmica sobre as inovações no ecossistema de saúde. O debate abordará como o desenvolvimento e a proteção de propriedades intelectuais se tornam fatores-chave para impulsionar a inovação, garantir competitividade e fortalecer a sustentabilidade do setor, trazendo diferentes perspectivas acadêmicas e de mercado. Local: Auditório do IFPI.',
-      instructor: 'Prof Dr. Robson Freitas ( IFPI - FLO)'
+    "modal-2": {
+      title: "Palestra de Abertura",
+      date: "07 de Outubro - 19:00 às 21:30",
+      description:
+        "Este talk show reunirá especialistas como o Prof. Mba. Ricardo Gomes de Queiroz (Sebrae), Prof. Me. Rogério da Silva Batista (IFPI – Teresina), Me. Thais Trajano (Cais Valley) e Prof. Me. Felipe Ibiapino para uma conversa dinâmica sobre as inovações no ecossistema de saúde. O debate abordará como o desenvolvimento e a proteção de propriedades intelectuais se tornam fatores-chave para impulsionar a inovação, garantir competitividade e fortalecer a sustentabilidade do setor, trazendo diferentes perspectivas acadêmicas e de mercado. Local: Auditório do IFPI.",
+      instructor: "Prof Dr. Robson Freitas ( IFPI - FLO)",
     },
-    'modal-3': {
-      title: 'Oficina 1',
-      date: '08 de Outubro - 08:00 às 10:00',
-      description: 'Oficina ministrada pela enfermeira do CAPS Maria Bianca Pereira Freitas com tema: Uso de Ferramentas Digitais na Otimização da Produção de Artigos e Trabalhos Académicos. Local: Auditório do IFPI.',
-      instructor: 'Bianca - Enfermeira do Caps'
+    "modal-3": {
+      title: "Oficina 1",
+      date: "08 de Outubro - 08:00 às 10:00",
+      description:
+        "Oficina ministrada pela enfermeira do CAPS Maria Bianca Pereira Freitas com tema: Uso de Ferramentas Digitais na Otimização da Produção de Artigos e Trabalhos Académicos. Local: Auditório do IFPI.",
+      instructor: "Bianca - Enfermeira do Caps",
     },
-    'modal-4': {
-      title: 'Mini Curso 2',
-      date: '08 de Outubro - 08:00 às 12:00',
-      description: 'Minicurso ministrado pelo Prof Ronaldo Pires Borges do IFPI - Floriano. SIAPE: 1755274. Observação: Precisará de Laboratório.',
-      instructor: 'Prof Ronaldo Pires Borges - IFPI Floriano'
+    "modal-4": {
+      title: "Mini Curso 2",
+      date: "08 de Outubro - 08:00 às 12:00",
+      description:
+        "Minicurso ministrado pelo Prof Ronaldo Pires Borges do IFPI - Floriano. SIAPE: 1755274. Observação: Precisará de Laboratório.",
+      instructor: "Prof Ronaldo Pires Borges - IFPI Floriano",
     },
-    'modal-5': {
-      title: 'Mini Curso 3 - Análise de Dados na Saúde',
-      date: '08 de Outubro - 08:00 às 12:00',
-      description: 'Um guia prático para preparação e exploração de dados na área da saúde. Ministrado por Ivan Rodrigues do IFPI - São Raimundo. SIAPE: 1294193. Observação: Precisará de Laboratório e não precisa de dormitório.',
-      instructor: 'Ivan Rodrigues - IFPI São Raimundo'
+    "modal-5": {
+      title: "Mini Curso 3 - Análise de Dados na Saúde",
+      date: "08 de Outubro - 08:00 às 12:00",
+      description:
+        "Um guia prático para preparação e exploração de dados na área da saúde. Ministrado por Ivan Rodrigues do IFPI - São Raimundo. SIAPE: 1294193. Observação: Precisará de Laboratório e não precisa de dormitório.",
+      instructor: "Ivan Rodrigues - IFPI São Raimundo",
     },
-    'modal-6': {
-      title: 'Mini Curso 4 - Primeiros Passos em Sistemas Embarcados com Raspberry Pi',
-      date: '08 de Outubro - 08:00 às 12:00',
-      description: 'Aprenda os conceitos fundamentais de sistemas embarcados e dê seus primeiros passos no desenvolvimento de projetos práticos utilizando a placa BitDogLab, baseada no Raspberry Pi. Neste minicurso, você entenderá o que são sistemas embarcados, onde eles estão presentes no nosso dia a dia e como programar uma aplicação básica que integra sensores e atuadores. Uma oportunidade prática para iniciar no universo da programação embarcada de forma simples e didática!',
-      instructor: 'Vinicius, Samuel e Deilson - IFPI Floriano'
+    "modal-6": {
+      title:
+        "Mini Curso 4 - Primeiros Passos em Sistemas Embarcados com Raspberry Pi",
+      date: "08 de Outubro - 08:00 às 12:00",
+      description:
+        "Aprenda os conceitos fundamentais de sistemas embarcados e dê seus primeiros passos no desenvolvimento de projetos práticos utilizando a placa BitDogLab, baseada no Raspberry Pi. Neste minicurso, você entenderá o que são sistemas embarcados, onde eles estão presentes no nosso dia a dia e como programar uma aplicação básica que integra sensores e atuadores. Uma oportunidade prática para iniciar no universo da programação embarcada de forma simples e didática!",
+      instructor: "Vinicius, Samuel e Deilson - IFPI Floriano",
     },
-    'modal-7': {
-      title: 'Oficina - A Revolução Tecnológica do Bem Estar',
-      date: '08 de Outubro - 15:30 às 17:30',
-      description: 'Oficina sobre como a tecnologia pode revolucionar o bem-estar das pessoas. Ministrada por Marcelo Prado Santiago do CTF - Colégio Técnico de Floriano. SIAPE: 2714888. Local: Auditório.',
-      instructor: 'Marcelo Prado Santiago - CTF'
+    "modal-7": {
+      title: "Oficina - A Revolução Tecnológica do Bem Estar",
+      date: "08 de Outubro - 15:30 às 17:30",
+      description:
+        "Oficina sobre como a tecnologia pode revolucionar o bem-estar das pessoas. Ministrada por Marcelo Prado Santiago do CTF - Colégio Técnico de Floriano. SIAPE: 2714888. Local: Auditório.",
+      instructor: "Marcelo Prado Santiago - CTF",
     },
     // 'modal-8': {
     //   title: 'Palestra 1',
@@ -132,49 +140,56 @@
     //   description: 'Palestra a ser confirmada com Thais do Cais Valley. Local: Auditório do IFPI.',
     //   instructor: 'A confirmar - Thais do Cais Valley'
     // },
-    'modal-9': {
-      title: 'Palestra 2 - Criando com Inteligência Artificial',
-      date: '08 de Outubro - 20:00 às 21:30',
-      description: 'Palestra sobre criação e desenvolvimento utilizando Inteligência Artificial. Palestrante a definir do SEBRAE. Local: Auditório do IFPI.',
-      instructor: 'A Definir - SEBRAE'
+    "modal-9": {
+      title: "Palestra 2 - Criando com Inteligência Artificial",
+      date: "08 de Outubro - 20:00 às 21:30",
+      description:
+        "Palestra sobre criação e desenvolvimento utilizando Inteligência Artificial. Palestrante a definir do SEBRAE. Local: Auditório do IFPI.",
+      instructor: "A Definir - SEBRAE",
     },
-    'modal-10': {
-      title: 'IA na Saúde: Transformando sua pesquisa em uma startup.',
-      date: '09 de Outubro - 19:00 às 20:00',
-      description: 'Esta palestra explora como a Inteligência Artificial está revolucionando o setor da saúde e abrindo caminho para a criação de startups inovadoras. Serão discutidos os passos necessários para transformar pesquisas acadêmicas em soluções de impacto no mercado, destacando desafios, oportunidades e estratégias para empreender com base em tecnologia e inovação em saúde. Local: Auditório do IFPI.',
-      instructor: 'Prof. Dr.  Otílio Paulo da Silva Neto (IFPI- THE)'
+    "modal-10": {
+      title: "IA na Saúde: Transformando sua pesquisa em uma startup.",
+      date: "09 de Outubro - 19:00 às 20:00",
+      description:
+        "Esta palestra explora como a Inteligência Artificial está revolucionando o setor da saúde e abrindo caminho para a criação de startups inovadoras. Serão discutidos os passos necessários para transformar pesquisas acadêmicas em soluções de impacto no mercado, destacando desafios, oportunidades e estratégias para empreender com base em tecnologia e inovação em saúde. Local: Auditório do IFPI.",
+      instructor: "Prof. Dr.  Otílio Paulo da Silva Neto (IFPI- THE)",
     },
-    'modal-11': {
-      title: 'Mini Curso: Pensando como um invasor',
-      date: '09 de Outubro - 09:00 às 12:00',
-      description: 'Minicurso ministrado por Keoma Souza, João Pedro Mendes e Vitória Rafaela da ETIPI. Local: Laboratório.',
-      instructor: 'Keoma Souza, João Pedro Mendes e Vitória Rafaela - ETIPI'
+    "modal-11": {
+      title: "Mini Curso: Pensando como um invasor",
+      date: "09 de Outubro - 09:00 às 12:00",
+      description:
+        "Minicurso ministrado por Keoma Souza, João Pedro Mendes e Vitória Rafaela da ETIPI. Local: Laboratório.",
+      instructor: "Keoma Souza, João Pedro Mendes e Vitória Rafaela - ETIPI",
     },
-    'modal-12': {
-      title: 'Piauí Saúde Digital: Rumo à Fila Zero - Como tecnologia e gestão estão redesenhando o acesso ao SUS',
-      date: '09 de Outubro - 15:00 às 17:00',
-      description: 'Como tecnologia e gestão estão redesenhando o acesso ao SUS. Palestra sobre inovações tecnológicas aplicadas à saúde pública no Piauí. Local: Auditório do IFPI.',
-      instructor: 'Rodrigo e Silva Souza - ETIPI'
+    "modal-12": {
+      title:
+        "Piauí Saúde Digital: Rumo à Fila Zero - Como tecnologia e gestão estão redesenhando o acesso ao SUS",
+      date: "09 de Outubro - 15:00 às 17:00",
+      description:
+        "Como tecnologia e gestão estão redesenhando o acesso ao SUS. Palestra sobre inovações tecnológicas aplicadas à saúde pública no Piauí. Local: Auditório do IFPI.",
+      instructor: "Rodrigo e Silva Souza - ETIPI",
     },
-    'modal-13': {
-      title: 'Palestra de Encerramento',
-      date: '09 de Outubro - 20:00 às 21:40',
-      description: 'Nesta palestra, exploraremos o papel essencial da cibersegurança na era da inteligência artificial, analisando como avanços tecnológicos trazem novos desafios e oportunidades para a proteção de dados e sistemas críticos. A partir de casos reais de ciberataques em hospitais, discutiremos as vulnerabilidades do setor da saúde, os impactos desses incidentes e as lições aprendidas que podem orientar melhores práticas de defesa no ambiente digital.',
-      instructor: 'Keoma e Cristiano'
+    "modal-13": {
+      title: "Palestra de Encerramento",
+      date: "09 de Outubro - 20:00 às 21:40",
+      description:
+        "Nesta palestra, exploraremos o papel essencial da cibersegurança na era da inteligência artificial, analisando como avanços tecnológicos trazem novos desafios e oportunidades para a proteção de dados e sistemas críticos. A partir de casos reais de ciberataques em hospitais, discutiremos as vulnerabilidades do setor da saúde, os impactos desses incidentes e as lições aprendidas que podem orientar melhores práticas de defesa no ambiente digital.",
+      instructor: "Keoma e Cristiano",
     },
-    'modal-14': {
-      title: 'Palestra de Encerramento Final',
-      date: '09 de Outubro - 20:00 às 21:00',
-      description: 'Palestra final de encerramento do evento. Tema a definir. Ministrada pelo Professor Otílio do IFPI - THE. Local: Auditório do IFPI.',
-      instructor: 'Professor Otílio - IFPI THE'
-    }
+    "modal-14": {
+      title: "Palestra de Encerramento Final",
+      date: "09 de Outubro - 20:00 às 21:00",
+      description:
+        "Palestra final de encerramento do evento. Tema a definir. Ministrada pelo Professor Otílio do IFPI - THE. Local: Auditório do IFPI.",
+      instructor: "Professor Otílio - IFPI THE",
+    },
   };
 
   // Day information
   const dayInfo = {
-    24: { name: 'TERÇA-FEIRA', date: '07 DE OUTUBRO' },
-    25: { name: 'QUARTA-FEIRA', date: '08 DE OUTUBRO' },
-    26: { name: 'QUINTA-FEIRA', date: '09 DE OUTUBRO' }
+    24: { name: "TERÇA-FEIRA", date: "07 DE OUTUBRO" },
+    25: { name: "QUARTA-FEIRA", date: "08 DE OUTUBRO" },
+    26: { name: "QUINTA-FEIRA", date: "09 DE OUTUBRO" },
   };
 
   // Main Application Class
@@ -236,6 +251,7 @@
       this.updateHeaderOnScroll(currentScroll);
       this.updateTimerOnScroll(currentScroll);
       this.updateBackToTop(currentScroll);
+      this.updateActiveNavOnScroll(currentScroll);
       this.handleScrollAnimations();
 
       this.scrollPosition = currentScroll;
@@ -249,13 +265,48 @@
     }
 
     updateHeaderOnScroll(scrollPosition) {
-      const header = document.querySelector(".header");
+      const header = document.querySelector(".header-inova");
       if (!header) return;
 
-      if (scrollPosition > 100) {
-        header.classList.add("scrolled");
+      // Detect if we're past the hero section (which has dark background)
+      const heroSection = document.querySelector(".hero-inova");
+      const heroHeight = heroSection ? heroSection.offsetHeight : 0;
+
+      // Apply solid background when scrolled past hero section
+      if (scrollPosition > heroHeight - 100) {
+        header.classList.add("header-scrolled");
       } else {
-        header.classList.remove("scrolled");
+        header.classList.remove("header-scrolled");
+      }
+
+      // Alternative: detect specific sections with light backgrounds
+      const lightSections = [
+        document.querySelector("#programacao"),
+        document.querySelector("#ministrantes"),
+        document.querySelector("#minicursos"),
+        document.querySelector("#parcerias"),
+        document.querySelector("#duvidas"),
+      ];
+
+      let isInLightSection = false;
+
+      lightSections.forEach((section) => {
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          const headerHeight = header.offsetHeight;
+
+          // Check if header overlaps with light section
+          if (rect.top <= headerHeight && rect.bottom >= 0) {
+            isInLightSection = true;
+          }
+        }
+      });
+
+      // Apply solid header class when over light sections
+      if (isInLightSection) {
+        header.classList.add("header-solid");
+      } else {
+        header.classList.remove("header-solid");
       }
     }
 
@@ -265,7 +316,7 @@
 
       // Detecta se é mobile (tablet pequeno incluído)
       const isMobile = window.innerWidth <= 768;
-      
+
       if (isMobile) {
         // No mobile/tablet, torna compacto após 150px de scroll
         if (scrollPosition > 150) {
@@ -292,6 +343,54 @@
       } else {
         backToTop.classList.remove("visible");
       }
+    }
+
+    updateActiveNavOnScroll(scrollPosition) {
+      // Get all sections that have navigation links
+      const sections = [
+        { id: "inicio", element: document.querySelector("#inicio") },
+        { id: "programacao", element: document.querySelector("#programacao") },
+        {
+          id: "ministrantes",
+          element: document.querySelector("#ministrantes"),
+        },
+        { id: "minicursos", element: document.querySelector("#minicursos") },
+        { id: "parcerias", element: document.querySelector("#parcerias") },
+        { id: "duvidas", element: document.querySelector("#duvidas") },
+      ];
+
+      const navLinks = document.querySelectorAll(".nav-link-inova");
+      let currentSection = "inicio"; // default
+
+      // Find which section is currently in view
+      sections.forEach((section) => {
+        if (section.element) {
+          const rect = section.element.getBoundingClientRect();
+          const sectionTop = rect.top + scrollPosition;
+          const sectionBottom = sectionTop + section.element.offsetHeight;
+
+          // Check if we're in this section (with some offset for header)
+          if (
+            scrollPosition + 150 >= sectionTop &&
+            scrollPosition + 150 < sectionBottom
+          ) {
+            currentSection = section.id;
+          }
+        }
+      });
+
+      // Update active nav link
+      navLinks.forEach((link) => {
+        const href = link.getAttribute("href");
+        if (href) {
+          const targetId = href.substring(1); // remove #
+          if (targetId === currentSection) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        }
+      });
     }
 
     initScrollAnimations() {
@@ -359,10 +458,10 @@
             smoothScrollTo(targetElement, 800, 100);
 
             // Update active nav link
-            document.querySelectorAll('.nav-link').forEach(navLink => {
-              navLink.classList.remove('active');
+            document.querySelectorAll(".nav-link-inova").forEach((navLink) => {
+              navLink.classList.remove("active");
             });
-            link.classList.add('active');
+            link.classList.add("active");
 
             if (navMenu && navMenu.classList.contains("active")) {
               navToggle.classList.remove("active");
@@ -424,19 +523,19 @@
 
     bindModalEvents() {
       // Activity cards click events
-      document.querySelectorAll('.activity-card').forEach(card => {
-        card.addEventListener('click', (e) => {
-          const modalId = card.getAttribute('data-modal');
+      document.querySelectorAll(".activity-card").forEach((card) => {
+        card.addEventListener("click", (e) => {
+          const modalId = card.getAttribute("data-modal");
           if (modalId && modalData[modalId]) {
             this.openModal(modalData[modalId]);
           }
         });
 
         // Keyboard accessibility
-        card.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
-            const modalId = card.getAttribute('data-modal');
+            const modalId = card.getAttribute("data-modal");
             if (modalId && modalData[modalId]) {
               this.openModal(modalData[modalId]);
             }
@@ -445,11 +544,11 @@
       });
 
       // Modal close events
-      const modalOverlay = document.querySelector('.modal-overlay');
-      const modalClose = document.querySelector('.modal-close');
+      const modalOverlay = document.querySelector(".modal-overlay");
+      const modalClose = document.querySelector(".modal-close");
 
       if (modalOverlay) {
-        modalOverlay.addEventListener('click', (e) => {
+        modalOverlay.addEventListener("click", (e) => {
           if (e.target === modalOverlay) {
             this.closeModal();
           }
@@ -457,15 +556,15 @@
       }
 
       if (modalClose) {
-        modalClose.addEventListener('click', () => {
+        modalClose.addEventListener("click", () => {
           this.closeModal();
         });
       }
     }
 
     openModal(data) {
-      const modalOverlay = document.querySelector('.modal-overlay');
-      const modalBody = document.querySelector('.modal-body');
+      const modalOverlay = document.querySelector(".modal-overlay");
+      const modalBody = document.querySelector(".modal-body");
 
       if (!modalOverlay || !modalBody) return;
 
@@ -480,15 +579,15 @@
         </div>
       `;
 
-      modalOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
+      modalOverlay.classList.add("active");
+      document.body.style.overflow = "hidden";
     }
 
     closeModal() {
-      const modalOverlay = document.querySelector('.modal-overlay');
+      const modalOverlay = document.querySelector(".modal-overlay");
       if (modalOverlay) {
-        modalOverlay.classList.remove('active');
-        document.body.style.overflow = '';
+        modalOverlay.classList.remove("active");
+        document.body.style.overflow = "";
       }
     }
 
@@ -525,8 +624,8 @@
         if (dayDateElement && info) dayDateElement.textContent = info.date;
 
         // Update controls
-        const prevBtn = document.querySelector('#prev-day');
-        const nextBtn = document.querySelector('#next-day');
+        const prevBtn = document.querySelector("#prev-day");
+        const nextBtn = document.querySelector("#next-day");
 
         if (prevBtn) prevBtn.disabled = dayIndex === 0;
         if (nextBtn) nextBtn.disabled = dayIndex === dayIndicators.length - 1;
@@ -544,7 +643,7 @@
         btn.addEventListener("click", () => {
           const action = btn.dataset.action;
           const currentIndex = [24, 25, 26].indexOf(this.currentDay);
-          
+
           if (action === "prev" && currentIndex > 0) {
             switchDay(currentIndex - 1);
           } else if (action === "next" && currentIndex < 2) {
@@ -641,10 +740,10 @@
           if (element) {
             const newValue = padNumber(timeDiff[key]);
             if (element.textContent !== newValue) {
-              element.style.transform = 'scale(1.1)';
+              element.style.transform = "scale(1.1)";
               element.textContent = newValue;
               setTimeout(() => {
-                element.style.transform = 'scale(1)';
+                element.style.transform = "scale(1)";
               }, 200);
             }
           }
@@ -674,8 +773,12 @@
 
   // Enhanced ripple effect for buttons and cards
   document.addEventListener("click", function (e) {
-    if (e.target.matches(".btn, .activity-card, .speaker-card, .minicourse-card")) {
-      const element = e.target.closest(".btn, .activity-card, .speaker-card, .minicourse-card");
+    if (
+      e.target.matches(".btn, .activity-card, .speaker-card, .minicourse-card")
+    ) {
+      const element = e.target.closest(
+        ".btn, .activity-card, .speaker-card, .minicourse-card"
+      );
       const rect = element.getBoundingClientRect();
       const size = Math.max(rect.width, rect.height);
       const x = e.clientX - rect.left - size / 2;
@@ -712,7 +815,7 @@
   });
 
   // Add CSS animation for ripple effect
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.textContent = `
     @keyframes ripple {
       to {
@@ -722,24 +825,22 @@
     }
   `;
   document.head.appendChild(style);
-
 })();
 
 (() => {
-  const timer = document.querySelector('.timer-section');
+  const timer = document.querySelector(".timer-section");
   if (!timer) return;
 
   const SHRINK_AT = 150; // ajuste o ponto de encolher conforme necessário
 
   const onScroll = () => {
     if (window.scrollY > SHRINK_AT) {
-      timer.classList.add('compact');
+      timer.classList.add("compact");
     } else {
-      timer.classList.remove('compact');
+      timer.classList.remove("compact");
     }
   };
 
-  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener("scroll", onScroll, { passive: true });
   onScroll(); // aplica estado correto ao carregar
 })();
-

@@ -12,10 +12,38 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.288);
   backdrop-filter: blur(10px);
   z-index: 999;
   transition: all 0.3s ease;
+}
+
+/* aqui é quando vc rola pra baixo ai o header muda de cor pra ter destaque no fundo branco */
+.header-inova.header-scrolled {
+  background: rgba(77, 13, 159, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-inova.header-solid {
+  background: linear-gradient(135deg, #4d0d9f 0%, #8b61c2 100%);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure text visibility in all header states */
+.header-inova.header-scrolled .nav-link-inova,
+.header-inova.header-solid .nav-link-inova {
+  color: white;
+}
+
+.header-inova.header-scrolled .nav-link-inova:hover,
+.header-inova.header-solid .nav-link-inova:hover {
+  color: #3b92a2;
+}
+
+.header-inova.header-scrolled .nav-toggle-inova .bar,
+.header-inova.header-solid .nav-toggle-inova .bar {
+  background: white;
 }
 
 .header-inova .container {
@@ -292,7 +320,10 @@
   transform: none !important;
 }
 
-#days, #hours, #minutes, #seconds {
+#days,
+#hours,
+#minutes,
+#seconds {
   transition: none !important;
   transform: none !important;
   animation: none !important;
@@ -501,8 +532,7 @@
   height: 384px;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 
-    0 24px 48px rgba(0, 0, 0, 0.35),
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35),
     0 0 0 1px rgba(255, 255, 255, 0.08);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
@@ -607,20 +637,20 @@
 
 @media (max-width: 1600px) {
   .social-sidebar-inova {
-  left: 0px;
-  top: 30%;
-  transform: translateY(-50%);
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+    left: 0px;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
-.efeito-tech {
-  width: 80%;
-  height: auto;
-  max-width: 100%;
-}
+  .efeito-tech {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 body.nav-open {
@@ -630,9 +660,181 @@ body.nav-open {
 @media (max-width: 1024px) {
   .efeito-tech {
     display: none;
+  }
 }
+/* ===== MOBILE LAYOUT IMPROVEMENTS ===== */
+
+/* Enhanced Mobile Header Layout */
+@media (max-width: 768px) {
+  .header-inova {
+    padding: 8px 0;
+  }
+
+  .header-content {
+    padding: 0 20px;
+  }
+
+  .logo-inova {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo-inova .logo-img {
+    height: 45px;
+    width: auto;
+  }
+
+  .nav-toggle-inova {
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-toggle-inova:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Enhanced Mobile Hero Layout */
+  .hero-inova {
+    padding-top: 70px;
+    min-height: 100vh;
+  }
+
+  .hero-inova-content {
+    padding: 40px 0 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .hero-date {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1.2px;
+  }
+
+  .hero-title-inova {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 25px;
+  }
+
+  .hero-subtitle-inova {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-location {
+    margin-bottom: 40px;
+  }
+
+  .hero-location p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  /* Enhanced Mobile Countdown Layout */
+  .countdown-inova {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+
+  .countdown-item-inova {
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    padding: 15px 12px;
+    text-align: center;
+    min-width: 75px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .countdown-number-inova {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 6px;
+    line-height: 1;
+  }
+
+  .countdown-label-inova {
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.8px;
+  }
 }
-/* ===== RESPONSIVE DESIGN ===== */
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  .hero-inova-content {
+    padding: 30px 0 50px;
+  }
+
+  .hero-left {
+    padding: 0 15px;
+  }
+
+  .hero-date {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title-inova {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .hero-subtitle-inova {
+    font-size: 15px;
+    margin-bottom: 30px;
+    max-width: 290px;
+  }
+
+  .hero-location {
+    margin-bottom: 35px;
+  }
+
+  .countdown-inova {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .countdown-item-inova {
+    min-width: 65px;
+    padding: 12px 8px;
+    border-radius: 20px;
+  }
+
+  .countdown-number-inova {
+    font-size: 24px;
+  }
+
+  .countdown-label-inova {
+    font-size: 10px;
+  }
+}
 @media (max-width: 1366px) {
   .social-sidebar-inova {
     display: none;
