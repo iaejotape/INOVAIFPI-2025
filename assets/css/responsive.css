@@ -707,6 +707,7 @@
   }
 
   .speaker-tags {
+    border-radius: 10px;
     gap: 2px;
     justify-content: center;
     flex-wrap: wrap;
