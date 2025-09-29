@@ -1,0 +1,42 @@
+/* Estilos para corrigir o botão VLibras borrado */
+
+/* Remove blur effects do VLibras */
+[vw] {
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+[vw] * {
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+/* Botão de acesso do VLibras */
+[vw] [vw-access-button] {
+  backdrop-filter: none !important;
+  filter: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Plugin wrapper do VLibras */
+[vw] [vw-plugin-wrapper] {
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+/* Container principal do plugin */
+.vw-plugin-top-wrapper {
+  backdrop-filter: none !important;
+  filter: none !important;
+}
+
+/* Garantir que o VLibras tenha alta prioridade no z-index */
+[vw] {
+  z-index: 9999999 !important;
+}
+
+/* Remover qualquer transformação que possa afetar a nitidez */
+[vw] * {
+  transform: translateZ(0) !important;
+  will-change: auto !important;
+}

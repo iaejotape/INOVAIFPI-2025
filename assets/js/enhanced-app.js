@@ -109,8 +109,8 @@
       title: "Mini Curso 2",
       date: "08 de Outubro - 08:00 às 12:00",
       description:
-        "Minicurso ministrado pelo Prof Ronaldo Pires Borges do IFPI - Floriano. SIAPE: 1755274. Observação: Precisará de Laboratório.",
-      instructor: "Prof Ronaldo Pires Borges - IFPI Floriano",
+        "Este minicurso apresenta uma introdução prática ao universo da Internet das Coisas (IoT), com foco em soluções baseadas em software livre. Os participantes aprenderão conceitos fundamentais da área e terão uma experiência hands-on, explorando na prática como integrar tecnologias e criar aplicações, incluindo um atendente virtual com chatbot. Local: Laboratório.",
+      instructor: "Prof. Me. Ronaldo Pires Borges - IFPI Floriano",
     },
     "modal-5": {
       title: "Mini Curso 3 - Análise de Dados na Saúde",
@@ -124,8 +124,8 @@
         "Mini Curso 4 - Primeiros Passos em Sistemas Embarcados com Raspberry Pi",
       date: "08 de Outubro - 08:00 às 12:00",
       description:
-        "Aprenda os conceitos fundamentais de sistemas embarcados e dê seus primeiros passos no desenvolvimento de projetos práticos utilizando a placa BitDogLab, baseada no Raspberry Pi. Neste minicurso, você entenderá o que são sistemas embarcados, onde eles estão presentes no nosso dia a dia e como programar uma aplicação básica que integra sensores e atuadores. Uma oportunidade prática para iniciar no universo da programação embarcada de forma simples e didática!",
-      instructor: "Vinicius, Samuel e Deilson - IFPI Floriano",
+        "Aprenda os conceitos fundamentais de sistemas embarcados e dê seus primeiros passos no desenvolvimento de projetos práticos utilizando a placa BitDogLab, baseada no Raspberry Pi. Neste minicurso, você entenderá o que são sistemas embarcados, onde eles estão presentes no nosso dia a dia e como programar uma aplicação básica que integra sensores e atuadores. Uma oportunidade prática para iniciar no universo da programação embarcada de forma simples e didática! Local: Laboratório.",
+      instructor: "Vinicius, Samuel e Deilson, Coordenação Prof. Me. Silvino Marques - IFPI Floriano",
     },
     "modal-7": {
       title: "Oficina - A Revolução Tecnológica do Bem Estar",
@@ -158,7 +158,7 @@
       title: "Mini Curso: Pensando como um invasor",
       date: "09 de Outubro - 09:00 às 12:00",
       description:
-        "Minicurso ministrado por Keoma Souza, João Pedro Mendes e Vitória Rafaela da ETIPI. Local: Laboratório.",
+        "Pensando como o Invasor é uma imersão de uma única aula que coloca você no lugar do hacker. Em poucas horas você vivencia cada etapa de um ataque do reconhecimento à pós-exploração e aprende a pensar de forma ofensiva para depois reforçar a defesa de sistemas, aplicativos e redes. Local: Laboratório.",
       instructor: "Keoma Souza, João Pedro Mendes e Vitória Rafaela - ETIPI",
     },
     "modal-12": {
