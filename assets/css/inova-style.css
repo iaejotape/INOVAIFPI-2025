@@ -529,7 +529,7 @@
 .about-media .video-container {
   position: relative;
   width: 100%;
-  height: 384px;
+  aspect-ratio: 16/9;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35),
@@ -543,9 +543,13 @@
 }
 
 .about-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  object-fit: cover;
 }
 
 /* Social Sidebar Inova */

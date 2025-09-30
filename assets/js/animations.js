@@ -1,4 +1,4 @@
-// ===== ANIMATIONS JAVASCRIPT =====
+// ===== secao de animacoes javascript =====
 
 import { 
   throttle, 
@@ -109,7 +109,7 @@ export class ScrollAnimationManager {
       return parseInt(element.dataset.delay);
     }
     
-    // Stagger animation
+    // animacao escalonada
     if (element.closest('[data-stagger]')) {
       const staggerDelay = parseInt(element.closest('[data-stagger]').dataset.stagger) || 100;
       return index * staggerDelay;
@@ -140,12 +140,12 @@ export class ScrollAnimationManager {
       element.classList.add('animate-in', `animate-${elementData.type}`);
       element.style.animationFillMode = 'both';
       
-      // Trigger custom event
+      // disparar evento customizado
       element.dispatchEvent(new CustomEvent('animation:start', {
         detail: { type: elementData.type }
       }));
       
-      // Listen for animation end
+      // escutar fim da animacao
       element.addEventListener('animationend', () => {
         element.dispatchEvent(new CustomEvent('animation:complete', {
           detail: { type: elementData.type }
@@ -156,7 +156,7 @@ export class ScrollAnimationManager {
   }
 
   bindScrollEvents() {
-    // Fallback for browsers without IntersectionObserver
+    // fallback para navegadores sem intersection observer
     if (!this.observer) {
       window.addEventListener('scroll', throttle(() => {
         this.elements.forEach((elementData, element) => {
@@ -168,7 +168,7 @@ export class ScrollAnimationManager {
     }
   }
 
-  // Manual trigger for specific elements
+  // acionamento manual para elementos especificos
   triggerElement(element) {
     const elementData = this.elements.get(element);
     if (elementData && !elementData.triggered) {
@@ -176,7 +176,7 @@ export class ScrollAnimationManager {
     }
   }
 
-  // Reset animation for element
+  // resetar animacao para elemento
   resetElement(element) {
     const elementData = this.elements.get(element);
     if (elementData) {

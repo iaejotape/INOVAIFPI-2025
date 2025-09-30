@@ -1,9 +1,9 @@
-/* ===== RESPONSIVE CSS ===== */
+/* ===== secao de css responsivo ===== */
 
-/* ===== MOBILE FIRST APPROACH ===== */
-/* Base styles are for mobile (320px+) */
+/* ===== abordagem mobile first ===== */
+/* estilos base sao para mobile (320px+) */
 
-/* ===== SMALL MOBILE (320px - 479px) ===== */
+/* ===== mobile pequeno (320px - 479px) ===== */
 @media (max-width: 479px) {
   :root {
     --font-size-5xl: 2rem; /* 32px */
@@ -19,7 +19,7 @@
     padding: 0 var(--spacing-4);
   }
 
-  /* Header */
+  /* secao de cabecalho */
   .header {
     top: 15px;
     left: 2px;
@@ -72,14 +72,14 @@
     display: flex;
   }
 
-  /* Main */
+  /* secao principal */
   .main {
     margin-top: 54px;
     padding-left: 2px;
     padding-right: 2px;
   }
 
-  /* Hero Section */
+  /* secao hero */
   .hero {
     margin: 0;
   }
@@ -117,7 +117,7 @@
     justify-content: center;
   }
 
-  /* Timer Section */
+  /* secao de cronometro */
   .timer-section {
     top: 52px;
     padding: var(--spacing-2) 0;
@@ -158,7 +158,7 @@
     display: none;
   }
 
-  /* Section Headers */
+  /* cabecalhos de secao */
   .section-title {
     font-size: var(--font-size-3xl);
   }
@@ -167,7 +167,7 @@
     font-size: var(--font-size-base);
   }
 
-  /* Programming Section */
+  /* secao de programacao */
   .programming {
     margin: var(--spacing-12) var(--spacing-1);
   }
@@ -198,7 +198,7 @@
     justify-content: center;
   }
 
-  /* Timeline */
+  /* linha do tempo */
   .timeline {
     padding-left: var(--spacing-6);
   }
@@ -241,7 +241,7 @@
     font-size: var(--font-size-sm);
   }
 
-  /* Speakers Section */
+  /* secao de ministrantes */
   .speakers {
     margin: var(--spacing-12) var(--spacing-1);
   }
@@ -294,7 +294,7 @@
     text-align: center;
   }
 
-  /* Minicourses Section */
+  /* secao de minicursos */
   .minicourses {
     margin: var(--spacing-12) var(--spacing-1);
   }
@@ -318,7 +318,7 @@
     font-size: var(--font-size-xl);
   }
 
-  /* Partners Section */
+  /* secao de parcerias */
   .partners {
     margin: var(--spacing-12) var(--spacing-1);
   }
@@ -612,7 +612,9 @@
     padding: var(--spacing-1);
     text-align: center;
     display: block;
-  } /* Modal */
+  }
+
+  /* Modal */
   .modal-content {
     width: 95%;
     max-height: 85vh;
@@ -620,6 +622,15 @@
 
   .modal-body {
     padding: var(--spacing-6);
+  }
+
+  /* Video Container Responsivo - usando aspect-ratio */
+  
+  /* Fallback para navegadores sem suporte ao aspect-ratio */
+  @supports not (aspect-ratio: 16/9) {
+    .about-media .video-container {
+      height: 200px;
+    }
   }
 
   /* Back to Top */
@@ -671,6 +682,8 @@
     min-width: 180px;
   }
 
+
+
   /* Speakers improvements for large mobile */
   .speakers-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -712,6 +725,13 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: var(--spacing-2);
+  }
+
+  /* Fallback para navegadores sem suporte ao aspect-ratio - Mobile Grande */
+  @supports not (aspect-ratio: 16/9) {
+    .about-media .video-container {
+      height: 250px;
+    }
   }
 }
 
@@ -788,6 +808,13 @@
     grid-template-columns: 1fr;
   }
 
+  /* Fallback para navegadores sem suporte ao aspect-ratio - Tablet */
+  @supports not (aspect-ratio: 16/9) {
+    .about-media .video-container {
+      height: 300px;
+    }
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-6);
@@ -824,6 +851,8 @@
     flex-direction: row;
     gap: var(--spacing-3);
   }
+
+
 }
 
 /* ===== TABLET LARGE (768px - 1023px) ===== */
@@ -1254,6 +1283,8 @@
     width: 40px;
     height: 40px;
   }
+
+
 
   /* Compact timer for very small screens */
   .timer-section.compact {
