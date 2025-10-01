@@ -689,14 +689,18 @@
       const track = document.querySelector(".partners-track");
       if (!track) return;
 
-      const items = track.children;
-      const itemsArray = Array.from(items);
-
-      // Clone items for infinite scroll
-      itemsArray.forEach((item) => {
-        const clone = item.cloneNode(true);
-        track.appendChild(clone);
-      });
+      const originalItems = Array.from(track.children);
+      
+      // Limpar o track para reconstruir
+      track.innerHTML = '';
+      
+      // Criar 3 conjuntos de itens para scroll infinito suave
+      for (let i = 0; i < 3; i++) {
+        originalItems.forEach((item) => {
+          const clone = item.cloneNode(true);
+          track.appendChild(clone);
+        });
+      }
 
       // Pause animation on hover
       track.addEventListener("mouseenter", () => {
@@ -706,6 +710,8 @@
       track.addEventListener("mouseleave", () => {
         track.style.animationPlayState = "running";
       });
+
+      console.log("Carrossel de parceiros inicializado com scroll infinito");
     }
 
     startCountdown() {

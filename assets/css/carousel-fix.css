@@ -1,0 +1,28 @@
+/* ===== CAROUSEL FIX ===== */
+/* Correção para o carrossel infinito de parceiros */
+
+.partners-track {
+  animation: scroll-horizontal-infinite 30s linear infinite !important;
+  width: max-content !important;
+  will-change: transform;
+}
+
+@keyframes scroll-horizontal-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+/* Controles de hover */
+.partners-carousel:hover .partners-track {
+  animation-play-state: paused;
+}
+
+/* Garantir suavidade */
+.partners-track {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
