@@ -134,12 +134,12 @@
         "Oficina sobre como a tecnologia pode revolucionar o bem-estar das pessoas. Ministrada por Marcelo Prado Santiago do CTF - Colégio Técnico de Floriano. SIAPE: 2714888. Local: Auditório.",
       instructor: "Marcelo Prado Santiago - CTF",
     },
-    // 'modal-8': {
-    //   title: 'Palestra 1',
-    //   date: '08 de Outubro - 19:00 às 20:00',
-    //   description: 'Palestra a ser confirmada com Thais do Cais Valley. Local: Auditório do IFPI.',
-    //   instructor: 'A confirmar - Thais do Cais Valley'
-    // },
+    'modal-8': {
+      title: 'Inovação e Inclusão: Jogos Digitais de Matemática no Ensino de Estudantes com TEA',
+      date: '08 de Outubro - 19:00 às 20:00',
+      description: 'Esta palestra explora como jogos digitais podem revolucionar o ensino de matemática para estudantes com Transtorno do Espectro Autista (TEA). Serão apresentadas estratégias inovadoras que utilizam tecnologias inclusivas para tornar o aprendizado matemático mais acessível, envolvente e eficaz. O foco está em metodologias que respeitam as particularidades dos estudantes com TEA, promovendo inclusão e desenvolvimento de habilidades matemáticas através de ferramentas digitais adaptadas. Local: Auditório do IFPI.',
+      instructor: 'Prof. Tiago Machado Rodrigues'
+    },
     "modal-9": {
       title: "Palestra 2 - Criando com Inteligência Artificial",
       date: "08 de Outubro - 20:00 às 21:30",
