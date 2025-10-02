@@ -441,8 +441,9 @@
 
 .tag {
   padding: var(--spacing-1) var(--spacing-3);
-  background: var(--gradient-primary);
+  background: var(--secondary-color);
   color: var(--white);
+  border: none;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
   border-radius: var(--radius-full);
@@ -1279,8 +1280,9 @@
 
 .tag {
   padding: var(--spacing-1) var(--spacing-3);
-  background: var(--gradient-primary);
+  background: var(--secondary-color);
   color: var(--white);
+  border: none;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
   border-radius: var(--radius-full);
