@@ -95,8 +95,8 @@
       title: "Palestra de Abertura",
       date: "07 de Outubro - 19:00 às 21:30",
       description:
-        "Este talk show reunirá especialistas como o Prof. Mba. Ricardo Gomes de Queiroz (Sebrae), Prof. Me. Rogério da Silva Batista (IFPI – Teresina), Me. Thais Trajano (Cais Valley) e Prof. Me. Felipe Ibiapino para uma conversa dinâmica sobre as inovações no ecossistema de saúde. O debate abordará como o desenvolvimento e a proteção de propriedades intelectuais se tornam fatores-chave para impulsionar a inovação, garantir competitividade e fortalecer a sustentabilidade do setor, trazendo diferentes perspectivas acadêmicas e de mercado. Local: Auditório do IFPI.",
-      instructor: "Prof Dr. Robson Freitas ( IFPI - FLO)",
+        "Este talk show reunirá especialistas como o Prof. Mba. Ricardo Gomes de Queiroz (UFPI), Prof. Me. Rogério da Silva Batista (IFPI – Teresina), Me. Thais Trajano (Cais Valley) e Prof. Me. Felipe Ibiapino para uma conversa dinâmica sobre as inovações no ecossistema de saúde. O debate abordará como o desenvolvimento e a proteção de propriedades intelectuais se tornam fatores-chave para impulsionar a inovação, garantir competitividade e fortalecer a sustentabilidade do setor, trazendo diferentes perspectivas acadêmicas e de mercado. Local: Auditório do IFPI.",
+      instructor: "Prof Dr. Robson Freitas (IFPI - FLO)",
     },
     "modal-3": {
       title: "Oficina 1",
