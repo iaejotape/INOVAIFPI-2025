@@ -31,7 +31,7 @@ O INOVA IFPI 2025 terá como tema “Inovações na Área de Saúde”, promoven
 ## Acesso
 
 O site pode ser acessado aqui
- (link do site ao vivo, se disponível).
+ https://inovaifpi.com/.
 
  ## Licença  
 
