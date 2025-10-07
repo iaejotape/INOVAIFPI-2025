@@ -109,7 +109,7 @@
       title: "Mini Curso - Atendente Virtual Com ChatBox",
       date: "08 de Outubro - 08:00 às 12:00",
       description:
-        "Neste curso prático e direto ao ponto, você vai aprender como criar e configurar um atendente virtual inteligente, capaz de interagir com usuários em tempo real por meio de um chatbox moderno e funcional. Vamos explorar desde os conceitos fundamentais de chatbots e automação de atendimento até a implementação prática, guiando você passo a passo no desenvolvimento de um sistema que pode ser utilizado em sites, lojas online, plataformas de serviços e muito mais. Local: Laboratório.",
+        "Neste minicurso prático, você vai aprender a criar um atendente virtual inteligente que realiza atendimento online por meio de um chatbot integrado a um site. Será utilizada a arquitetura RAG, permitindo que o chatbot se torne especialista em um assunto específico e responda com precisão e contexto. Local: Laboratório",
       instructor: "Prof. Me. Ronaldo Pires Borges - IFPI Floriano",
     },
     "modal-5": {
