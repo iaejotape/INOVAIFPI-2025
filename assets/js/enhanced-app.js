@@ -99,29 +99,29 @@
       instructor: "Prof Dr. Robson Freitas (IFPI - FLO)",
     },
     "modal-3": {
-      title: "Oficina 1",
+      title: "Oficina",
       date: "08 de Outubro - 08:00 às 10:00",
       description:
         "Oficina ministrada pela enfermeira do CAPS Maria Bianca Pereira Freitas com tema: Uso de Ferramentas Digitais na Otimização da Produção de Artigos e Trabalhos Académicos. Local: Auditório do IFPI.",
       instructor: "Bianca - Enfermeira do Caps",
     },
     "modal-4": {
-      title: "Mini Curso 2",
+      title: "Mini Curso - Atendente Virtual Com ChatBox",
       date: "08 de Outubro - 08:00 às 12:00",
       description:
-        "Este minicurso apresenta uma introdução prática ao universo da Internet das Coisas (IoT), com foco em soluções baseadas em software livre. Os participantes aprenderão conceitos fundamentais da área e terão uma experiência hands-on, explorando na prática como integrar tecnologias e criar aplicações, incluindo um atendente virtual com chatbot. Local: Laboratório.",
+        "Neste curso prático e direto ao ponto, você vai aprender como criar e configurar um atendente virtual inteligente, capaz de interagir com usuários em tempo real por meio de um chatbox moderno e funcional. Vamos explorar desde os conceitos fundamentais de chatbots e automação de atendimento até a implementação prática, guiando você passo a passo no desenvolvimento de um sistema que pode ser utilizado em sites, lojas online, plataformas de serviços e muito mais. Local: Laboratório.",
       instructor: "Prof. Me. Ronaldo Pires Borges - IFPI Floriano",
     },
     "modal-5": {
-      title: "Mini Curso 3 - Análise de Dados na Saúde",
+      title: "Mini Curso - Análise de Dados na Saúde",
       date: "08 de Outubro - 08:00 às 12:00",
       description:
-        "Um guia prático para preparação e exploração de dados na área da saúde. Ministrado por Ivan Rodrigues do IFPI - São Raimundo. SIAPE: 1294193. Observação: Precisará de Laboratório e não precisa de dormitório.",
+        "Minicurso introdutório de análise de dados em saúde, com foco em preparar, organizar, limpar e explorar dados biomédicos e epidemiológicos usando Python (Pandas, Seaborn e Plotly). Indicado para estudantes e profissionais de saúde e tecnologia que desejam dar os primeiros passos na área. Local: Laboratório.",
       instructor: "Ivan Rodrigues - IFPI São Raimundo",
     },
     "modal-6": {
       title:
-        "Mini Curso 4 - Primeiros Passos em Sistemas Embarcados com Raspberry Pi",
+        "Mini Curso - Primeiros Passos em Sistemas Embarcados com Raspberry Pi",
       date: "08 de Outubro - 08:00 às 12:00",
       description:
         "Aprenda os conceitos fundamentais de sistemas embarcados e dê seus primeiros passos no desenvolvimento de projetos práticos utilizando a placa BitDogLab, baseada no Raspberry Pi. Neste minicurso, você entenderá o que são sistemas embarcados, onde eles estão presentes no nosso dia a dia e como programar uma aplicação básica que integra sensores e atuadores. Uma oportunidade prática para iniciar no universo da programação embarcada de forma simples e didática! Local: Laboratório.",
@@ -141,11 +141,11 @@
       instructor: 'Prof. Tiago Machado Rodrigues'
     },
     "modal-9": {
-      title: "Palestra 2 - Criando com Inteligência Artificial",
+      title: "Palestra - Criando com Inteligência Artificial",
       date: "08 de Outubro - 20:00 às 21:30",
       description:
-        "Palestra sobre criação e desenvolvimento utilizando Inteligência Artificial. Palestrante a definir do SEBRAE. Local: Auditório do IFPI.",
-      instructor: "A Definir - SEBRAE",
+        "Palestra sobre criação e desenvolvimento utilizando Inteligência Artificial com Bekembauer Procópio Rocha. Local: Auditório do IFPI.",
+      instructor: "Bekembauer Procópio Rocha - SEBRAE",
     },
     "modal-10": {
       title: "IA na Saúde: Transformando sua pesquisa em uma startup.",
